@@ -139,8 +139,8 @@ a {
 .hero-image {
   background: 
     linear-gradient(
-      rgba(118, 124, 119, 0.4),
-      rgba(118, 124, 119, 0.4)
+      rgba(118, 124, 119, 0.5),
+      rgba(118, 124, 119, 0.5)
     ),
     url(images/compressed/cover/favourites/forest2.jpg);
   background-size: cover;
@@ -156,7 +156,7 @@ a {
   position: absolute;
   left: 50%;
   text-align: center;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -185,6 +185,7 @@ a {
 
 .service-box {
   /* border: 2px solid rgba(0, 0, 0, 0.8); */
+  border: 2px solid #697b5e;
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
@@ -193,7 +194,7 @@ a {
   position: relative;
   width: 23vw;
 }
-
+/* 
 .individuals-box {
   border: 2px solid #697b5e;
 }
@@ -204,12 +205,12 @@ a {
 
 .orgs-box {
   border: 2px solid #ae8b75;
-}
+} */
 
 .service-box__image {
   background-size: cover;
   background-position: center;
-  flex: 0 1 50%;
+  flex: 0 1 60%;
 }
 
 .individuals-image {
@@ -227,6 +228,7 @@ a {
 .service-box__number {
   /* background-color: #fabea7; */
   border-radius: 100%;
+  display: none;
   height: 7rem;
   left: 50%;
   position: absolute;
@@ -259,7 +261,7 @@ a {
 }
 
 .service-box__text {
-  flex: 0 1 50%;
+  flex: 0 1 40%;
   position: relative;
 }
 
@@ -269,7 +271,7 @@ a {
   left: 50%;
   position: absolute;
   text-align: center;
-  top: 30%;
+  top: 20%;
   transform: translate(-50%, -50%); 
   width: 90%;
 }
@@ -280,13 +282,14 @@ a {
   left: 50%;
   position: absolute;
   text-align: center;
-  top: 62%;
+  top: 55%;
   transform: translate(-50%, -50%); 
   width: 90%;
 }
 
 .service-box button {
   /* background-color: #fabea7; */
+  background-color: #697b5e;
   border: none;
   border-radius: 10px;
   color: #fff8ee;
@@ -302,10 +305,11 @@ a {
 }
 
 .service-box button:hover {
+  background-color: rgb(70, 87, 59);
   top: 99.5%;
 }
 
-.individuals-button {
+/* .individuals-button {
   background-color: #697b5e;
 }
 
@@ -326,7 +330,7 @@ a {
 }
 .orgs-button:hover {
   background-color: rgb(124, 89, 67);
-}
+} */
 
 .service-box button:hover {
   color: #fff8ee;
@@ -371,6 +375,7 @@ a {
   font-family: 'Spartan', sans-serif;
   font-size: 3.5rem;
   font-weight: 100;
+  text-transform: uppercase;
 }
 
 .about-text h2 {
@@ -476,6 +481,11 @@ a {
 .icons-section__box--text p {
   font-size: 1.4rem;
   font-weight: 300;
+  text-align: justify;
+}
+
+.test p {
+  text-align: center;
 }
 
 
