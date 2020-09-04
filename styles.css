@@ -43,7 +43,7 @@ body {
   flex-direction: column;
   font-weight: 400;
   line-height: 1.6;
-  margin: 0 4vw;
+  /* margin: 0 4vw; */
   max-width: 100vw;
 }
 
@@ -59,6 +59,11 @@ a {
   margin: 5vh auto 2vh;
   position: relative;
   text-align: center;
+}
+
+.bring-forward {
+  color: #fffdf9;
+  z-index: 1000;
 }
 
 .header-arrow {
@@ -80,8 +85,9 @@ a {
   flex: 1;
   flex-direction: row-reverse;
   height: 15vh;
+  padding: 0 4vw;
   position: fixed;
-  width: 92%;
+  width: 100%;
   z-index: 20;
 }
 .header-logo {
@@ -134,7 +140,7 @@ a {
 
 .hero {
   flex: 1 1 70vh;
-  margin-top: 15vh;
+  margin: 15vh 4vw 0;
 }
 
 .hero-image {
@@ -173,6 +179,7 @@ a {
   display: flex;
   flex: 1;
   flex-direction: column;
+  margin: 0 4vw;
 }
 
 .services-boxes {
@@ -356,7 +363,7 @@ a {
   display: flex;
   flex: 1;
   flex-direction: row;
-  margin: 5vh 6vw;
+  margin: 5vh 10vw;
 }
 
 .about-image {
@@ -486,6 +493,171 @@ a {
   font-weight: 300;
   height: 10rem;
   text-align: justify;
+}
+
+/* ******************** < TESTIMONIAL STYLES > ******************** */
+
+.testimonials-section {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 0 4rem;
+}
+
+#testimonials .section-header {
+  margin-top: 8rem;
+}
+
+
+/* SLIDER STYLES */
+.testimonials-container {
+	position: relative;
+	width: 100vw;
+	height: 85vh;
+	overflow: hidden;
+}
+.testimonials-container.ie9 nav div span {
+	display: none;
+}
+.testimonials-container ul li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	transition: visibility 0s .6s;
+}
+.testimonials-container ul li::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 100%;
+	width: 135vh;
+	height: 135vh;
+	border: solid rgba(0,0,0,0.2);
+	border-width: 0;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	transition: border-width .4s .6s;
+}
+.testimonials-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: 50% 100%;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	mix-blend-mode: lighten;
+	opacity: 0;
+	transform: scale(1.2);
+	transition: opacity .4s .6s, transform .4s .6s;
+}
+.testimonials-content blockquote {
+  font-family: 'Poppins', sans-serif;;
+	position: absolute;
+	top: 55%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+	z-index: 200;
+	max-width: 40%;
+}
+blockquote p {
+  font-size: 2.5rem;
+	margin-bottom: 3rem;
+}
+blockquote span {
+  color: #fff8ee;
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+/* CURRENT SLIDE
+---------------------------------*/
+.testimonials-container li.current_slide {
+	visibility: visible;
+}
+.testimonials-container li.current_slide::before {
+	border-width: 16rem;
+}
+.testimonials-container li.current_slide .testimonials-content {
+	opacity: 1;
+	transform: scale(1);
+}
+/* ARROWS
+---------------------------------*/
+.testimonials-arrows div {
+	position: absolute;
+	top: 50%;
+	left: 4%;
+	width: 5rem;
+	height: 5rem;
+	margin-top: -2.5rem;
+	list-style: none;
+}
+.testimonials-arrows div:last-of-type {
+	left: auto;
+	right: 4%;
+}
+.prev, .next {
+	position: relative;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 100%;
+	transition: box-shadow .3s;
+}
+.prev::before, .prev::after, .next::before, .next::after {
+	content: '';
+	position: absolute;
+	left: 43%;
+	background: #fff;
+	width: .4rem;
+	min-width: 3px;
+	border-radius: 3px;
+	height: 34%;
+}
+.prev::before {
+	transform: rotate(45deg);
+	top: 24%;
+}
+.prev::after {
+	transform: rotate(-45deg);
+	bottom: 24%;
+}
+.next::before, .next::after {
+	left: auto;
+	right: 43%;
+}
+.next::before {
+	transform: rotate(-45deg);
+	top: 24%;
+}
+.next::after {
+	transform: rotate(45deg);
+	bottom: 24%;
+}
+.prev:hover, .next:hover {
+	box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.15);
+}
+.testimonials-arrows > div > span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border-radius: 100%;
+	z-index: 5;
+	pointer-events: none;
+	will-change: width, height;
+	transform: translate(-50%, -50%);
+	transition: width .6s, height .6s;
 }
 
 
