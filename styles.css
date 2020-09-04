@@ -62,12 +62,13 @@ a {
 }
 
 .header-arrow {
-  left: 50%;
+  display: none;
+  /* left: 50%;
   opacity: 0.1;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 10rem;
+  width: 10rem; */
 }
 
 /* ******************** < HEADER STYLES > ******************** */
@@ -208,13 +209,15 @@ a {
 } */
 
 .service-box__image {
+  background-position: right center;
   background-size: cover;
-  background-position: center;
-  flex: 0 1 60%;
+  flex: 0 1 52%;
 }
 
 .individuals-image {
   background-image: url("/images/compressed/services/private/private.jpg");
+  background-position: 92% 90%;
+  background-size: 120% 120%;
 }
 
 .yoga-image {
@@ -223,6 +226,7 @@ a {
 
 .orgs-image {
   background-image: url("/images/compressed/services/organisations/organisations.png");
+  background-position: 60% 50%;
 }
 
 .service-box__number {
@@ -261,23 +265,23 @@ a {
 }
 
 .service-box__text {
-  flex: 0 1 40%;
+  flex: 0 1 48%;
   position: relative;
 }
 
 .service-box__text h2 {
-  font-size: 1.6rem;
+  font-size: 1.65rem;
   font-weight: 500;
   left: 50%;
   position: absolute;
   text-align: center;
-  top: 20%;
+  top: 21%;
   transform: translate(-50%, -50%); 
   width: 90%;
 }
 
 .service-box__text p {
-  font-size: 1.4rem;
+  font-size: 1.48rem;
   font-weight: 300;
   left: 50%;
   position: absolute;
@@ -356,12 +360,12 @@ a {
 }
 
 .about-image {
-  background-image: url(/images/compressed/about/IMG_7065\ copy.jpg);
+  background-image: url(/images/compressed/about/kristina_filter_2.jpg);
   background-position: center;
   background-size: cover;
   flex: 0 0 auto;
   margin-right: 3vw;
-  width: 30vw;
+  width: 20vw;
 }
 
 .about-text {
@@ -387,7 +391,7 @@ a {
 }
 
 .about-text p {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   font-weight: 300;
   margin: 2rem 0;
 }
@@ -401,6 +405,7 @@ a {
   font-size: 1.7rem;
   font-weight: 300;
   padding: 1.5rem 2rem;
+  margin-top: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -425,17 +430,11 @@ a {
   flex: 1;
   flex-direction: column;
   justify-content: center;
+  margin: 2rem 0 4rem;
 }
 
 /* ******************** < VALUES STYLES > ******************** */
 
-.icons-section {
-  align-items: center;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .icons-section__container {
   align-items: center;
@@ -444,6 +443,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 4rem 0;
 }
 
 .icons-section__box {
@@ -453,10 +453,9 @@ a {
 }
 
 .icons-section__box:hover .icons-section__box--text h2 {
-  color: rgb(70, 87, 59);
-  border-bottom: 2px solid #697b5e;
-  margin: 0 4.3rem .8rem;
-  
+  /* color: rgb(70, 87, 59); */
+  border-bottom: 1px solid #697b5e;
+  margin: 0 0 .9rem; 
 }
 
 .icons-section__box--icon {
@@ -473,19 +472,20 @@ a {
 }
 
 .icons-section__box--text h2 {
+  color: rgb(70, 87, 59);
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 200;
+  letter-spacing: 0.1px;
+  padding: 1rem 0;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .icons-section__box--text p {
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   font-weight: 300;
+  height: 10rem;
   text-align: justify;
-}
-
-.test p {
-  text-align: center;
 }
 
 
