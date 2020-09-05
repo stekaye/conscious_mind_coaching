@@ -26,10 +26,10 @@
     <header class="header">
       <nav>
         <ul class="header-nav nav-links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#services" data-page="services">Services</a></li>
+          <li><a href="#about" data-page="about">About</a></li>
+          <li><a href="#testimonials" data-page="testimonials">Testimonials</a></li>
+          <li><a href="#contact" data-page="contact">Contact</a></li>
         </ul>
       </nav>
         <ul class="header-logo">
@@ -41,10 +41,10 @@
       <div class="hero-text">Discover yourself.<span>Tune into your inner guide.</span></div>
     </div>
 
-    <div class="services-section" id="services">
+    <div class="services-section">
       <div class="section-header">SERVICES<img class="header-arrow" src="images/compressed/down-arrow.svg" alt="Conscious Mind Coaching Services"></div>
 
-      <div class="services-boxes">
+      <div class="services-boxes" id="services">
 
         <div class="service-box individuals-box">
           <div class="service-box__image individuals-image"></div>
@@ -53,7 +53,7 @@
             <h2>Coaching for Individuals</h2>
             <p>I want to tune into my inner guide and become the designer of my own personal or professional change.</p>
           </div>
-          <button class="service-box__button individuals-button">Learn More</button>
+          <button class="generic-button services-button individuals-button">Learn More</button>
         </div>
 
         <div class="service-box yoga-box">
@@ -63,7 +63,7 @@
             <h2>Yoga and Personal Development</h2>
             <p>I want to create my own wellbeing tools in line with my values and integrate them with mind, body and spirit.</p>
           </div>
-          <button class="service-box__button yoga-button">Learn More</button>
+          <button class="generic-button services-button  yoga-button">Learn More</button>
         </div>
 
         <div class="service-box orgs-box">
@@ -73,25 +73,33 @@
             <h2>Coaching for Teams & Organisations</h2>
             <p>I want to empower my team and organisation to create a culture of wellbeing and add some more text for consistency.</p>
           </div>
-          <button class="service-box__button orgs-button">Learn More</button>
+          <button class="generic-button services-button  orgs-button">Learn More</button>
         </div>
       </div>
     </div>
 
-    <div class="about-section" id="about">
+    <div id="about"></div>
+
+    <div class="about-section">
       <div class="about-image">
         
       </div>
       <div class="about-text">
+        <div class="about-text__box">
         <h1>About Me</h1>
         <h2>Hi! </h2>
-        <p>I’m Kristina Müller and I’m passionate about supporting people and organisations in their moment of change with the aim of living fulfilled lives radiating alignment and wellbeing.</p>
+        <p>I'm Kristina Müller and I’m passionate about supporting people and organisations in their moment of change with the aim of living fulfilled lives radiating alignment and wellbeing.</p>
 
-        <p>I’m a certified coach in ‘Professional and Systemic Coaching’, and I dispose of more than 7 years of corporate experience in developing people and teams.</p>
+        <p>I’m a certified coach in ‘Professional and Systemic Coaching’, with more than 7 years of business experience in developing people and professional teams.</p>
           
-        <p>As a certified yoga teacher Hatha-Vinyasa style, I’ve also combined coaching and yoga into an integral approach that allows people to design their own wellbeing tools to embody and integrate their change into their everyday lives. </p>
+        <p>As a certified yoga teacher Hatha-Vinyasa style, I’ve also combined coaching and yoga into an integral approach that allows people to design their own wellbeing tools to embody and integrate their change into their everyday lives.</p>
+        </div>
 
-        <button class="about-button">Learn More</button>
+        <div class="about-button__container">
+          <button class="generic-button about-button">Learn More</button>
+        </div>
+
+        
       </div>
     </div>
 
@@ -214,9 +222,97 @@
 
     </section>
     </div>
+
+    <div class="contact-section" id="contact">
+
+      <div class="section-header">GET IN TOUCH<img class="header-arrow" src="images/compressed/down-arrow.svg" alt="Conscious Mind Coaching Services"></div>
+
+      <div class="contact-form__text">
+        <p>To learn more about me and my services you can reach out directly on the email below, or fill in the contact form below and I'll get back to you.</p>
+        <a class="email-address" href="consciousmindcoaching@gmail.com">consciousmindcoaching@gmail.com</a>
+      </div>
+      
+      <div class="contact-section__container">
+        <div class="contact-form__container">
+
+          <div class="contact-form__left-side" data-tilt>
+            <img src="images/compressed/contact/Autumn_transparent.png" alt="Conscious Mind Coaching: Contact Image">
+          </div>
+    
+          <form class="contact-form__right-side validate-form">
+    
+            <div class="contact-form__input--wrap validate-input" data-validate = "Name is required">
+              <input class="contact-form__input" type="text" name="name" placeholder="Name">
+              <span class="contact-form__input--shadow"></span>
+            </div>
+    
+            <div class="contact-form__input--wrap validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+              <input class="contact-form__input" type="text" name="email" placeholder="Email">
+              <span class="contact-form__input--shadow"></span>
+            </div>
+    
+            <div class="contact-form__input--wrap validate-input" data-validate = "Subject is required">
+              <input class="contact-form__input" type="text" name="subject" placeholder="Subject">
+              <span class="contact-form__input--shadow"></span>
+            </div>
+    
+            <div class="contact-form__input--wrap validate-input" data-validate = "Message is required">
+              <textarea class="contact-form__input" name="message" placeholder="Message"></textarea>
+              <span class="contact-form__input--shadow"></span>
+            </div>
+    
+            <div class="contact-button__container">
+              <button class="generic-button about-button">
+                  Send Email
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+    </div>
+
+    <div class="instagram-section">
+
+      <div class="photo-box__container">
+        <a class="photo-box photo-1" href="https://www.instagram.com/p/CECWocoqQPj/" target="_blank"></a>
+        <a class="photo-box photo-2" href="https://www.instagram.com/p/CA8VkeSIlUx/" target="_blank"></a>
+        <a class="photo-box photo-3" href="https://www.instagram.com/p/CDJCnraKhd9/" target="_blank"></a>
+        <a class="photo-box photo-4" href="https://www.instagram.com/p/CDVhJuHqxeq/" target="_blank"></a>
+      </div>
+
+      <div class="instagram-link">
+        <a href="https://www.instagram.com/consciousmindcoaching/" target="_blank">
+          <i class="fab fa-instagram"></i>
+          <p>Connect with us on Instagram</p>
+        </a>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+
+      <ul class="footer-logo">
+        <li><a href="/"><img src="/images/compressed/logo.png" alt="Conscious Mind Coaching Logo"></a></li>
+      </ul> 
+
+      <nav>
+        <ul class="footer-nav nav-links">
+          <li><a href="#services" data-page="services">Services</a></li>
+          <li><a href="#about" data-page="about">About</a></li>
+          <li><a href="#testimonials" data-page="testimonials">Testimonials</a></li>
+          <li><a href="#contact" data-page="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="copyright">
+        <p>Copyright Conscious Mind Coaching @ 2020</p>
+        <span>Proudly created by Stephen Kaye</span>  
+      </div>
+    </footer>
     
     
-    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js" async defer></script>
   </body>
 </html>
