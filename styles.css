@@ -139,7 +139,7 @@ a {
   text-decoration: none;
 }
 .header-logo img {
-  height: 7.5rem;
+  height: 8rem;
 }
 .header-nav {
   flex: 1 1 0;
@@ -178,7 +178,7 @@ a {
       rgba(118, 124, 119, 0.5),
       rgba(118, 124, 119, 0.5)
     ),
-    url(images/compressed/cover/favourites/forest2.jpg);
+    url(images/compressed/cover/favourites/forest2r.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -368,7 +368,7 @@ a {
   display: flex;
   flex: 1;
   flex-direction: row;
-  margin: 8vh 10vw;
+  margin: 6vh 10vw;
 }
 
 .about-image {
@@ -409,7 +409,7 @@ a {
 }
 
 .about-button {
-  margin-bottom: 3vh;
+  margin: 1vh 0 3vh;
 }
 
 .about-button:hover {
@@ -899,24 +899,32 @@ textarea.contact-form__input + .contact-form__input--shadow {
 .footer {
   align-items: center;
   background-color: #ffdecf;
-  display: flex;
-  flex-direction: column;
-  height: 40vh;
-  justify-content: center;
-  margin: 3rem 0 0;
+  position: relative;
+  height: 30vh;
+  /* margin: 3rem 0 0; */
 }
 
 .footer-logo {
-  flex: 1;
-  margin: 2rem 0;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .footer-logo img {
   height: 10rem;
 }
 
+ul.footer-nav {
+  width: 100vw;
+}
+
 .footer-nav {
-  flex: 1;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  transform: translate(-50%, -50%);
 }
 
 .footer-nav > li {
@@ -933,19 +941,21 @@ textarea.contact-form__input + .contact-form__input--shadow {
 .footer-nav a {
   color: #767c77;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 300;
   text-decoration: none;
 }
 
 .copyright {
   color: #767c77;
-  flex: 1;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 200;
-  padding: 4rem 0 0;
+  left: 50%;
+  position: absolute;
   text-align: center;
+  top: 80%;
+  transform: translate(-50%, -50%);
 }
 
 .copyright p {
@@ -988,9 +998,74 @@ textarea.contact-form__input + .contact-form__input--shadow {
     font-size: 1.5rem;
     font-weight: 200;
   }
+
+  /* .testimonials-container {
+    height: 85vh;
+  } */
+
+  .testimonials-container ul li::before {
+    /* border-radius: 5%; */
+    width: 90vh;
+    height: 90vh;
+    opacity: 0.3;
+  }
+
+  .testimonials-content blockquote {
+    top: 50%;
+    max-width: 85%;
+  }
+  blockquote p {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  blockquote span {
+    font-size: 1.8rem;
+    font-weight: 100;
+  }
+
+  .instagram-section {
+    flex-direction: row-reverse;
+    flex: 1;
+    width: 100%;
+  }
+  
+  .photo-box__container {
+    align-items: center;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .photo-box {
+    flex: 0 0 19.5vw;
+    height: 19.5vw;
+    margin: 1vh 0.5vw 0;
+    opacity: 0.8;
+  }
+
+  .photo-4 {
+    display: none;
+  }
+  
+  .instagram-link {
+    flex: 0 0 38vw;
+    height: 19.5vw;
+    margin: 1vh 0.5vw 0;
+  }
+  
+  .instagram-link p {
+    font-size: 1.6rem;
+  }
+  
+  .instagram-link i {
+    font-size: 4rem;
+  }
+
 }
 
-@media (max-width: 750px) {
+@media (max-width: 780px) {
 
   .contact-form__text {
     font-size: 1.8rem;
@@ -1012,21 +1087,6 @@ textarea.contact-form__input + .contact-form__input--shadow {
   .contact-form__right-side {
     width: 100%;
   }
-
-  .instagram-section {
-    flex-direction: row;
-    flex: 1;
-    width: 100%;
-  }
-  
-  .photo-box__container {
-    align-items: center;
-    flex: 1;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    width: 100%;
-  }
   
   .photo-box {
     flex: 0 0 24vw;
@@ -1035,7 +1095,7 @@ textarea.contact-form__input + .contact-form__input--shadow {
     opacity: 0.8;
   }
 
-  .photo-4, .photo-3 {
+  .photo-3 {
     display: none;
   }
   
@@ -1053,8 +1113,109 @@ textarea.contact-form__input + .contact-form__input--shadow {
   .instagram-link i {
     font-size: 5rem;
   }
+ 
+  .footer-logo img {
+    height: 8rem;
+  }
+
+  .footer-nav a {
+    font-size: 1.6rem;
+  }
+  
+  .copyright {
+    font-size: 1rem;
+    font-weight: 200;
+  }
 
 }
+
+@media (max-width: 600px) {
+
+  .section-header {
+    font-size: 1.8rem;
+    font-weight: 100;
+    margin: 2vh auto;
+  }
+
+  .mobile-remove {
+    display: none;
+  }
+
+  .about-text h1 {
+    font-size: 1.8rem;
+    font-weight: 100;
+  }
+
+  .testimonials-container ul li::before {
+    border-radius: 5%;
+    width: 120vh;
+    height: 120vh;
+    opacity: 0.3;
+  }
+
+  .testimonials-content blockquote {
+    top: 50%;
+    width: 100%;
+  }
+  blockquote p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
+  blockquote span {
+    font-size: 1.2rem;
+    font-weight: 100;
+  }
+
+  .testimonials-arrows div {
+    top: 80%;
+    left: 6%;
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .testimonials-arrows div:last-of-type {
+    right: 6%;
+  }
+
+  .contact-form__container {
+    padding: 4rem 3rem;
+  }
+
+  .contact-form__text {
+    width: 95%;
+  }
+
+  .instagram-link p {
+    font-size: 1.2rem;
+  }
+  
+  .instagram-link i {
+    font-size: 2.8rem;
+    padding: .8rem 0;
+  }
+
+  .instagram-link a {
+    width: 95%;
+  }
+
+  .footer-logo img {
+    height: 6.5rem;
+  }
+
+  .footer-nav a {
+    font-size: 1.1rem;
+  }
+  
+  .copyright {
+    width: 100%;
+    font-size: .8rem;
+    font-weight: 200;
+  }
+
+  
+
+}
+
+
 
 
 

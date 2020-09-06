@@ -8,7 +8,7 @@
     <meta name="viewport" testimonials-content="width=device-width, initial-scale=1">
     
      <!-- FAVICON -->
-    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon2.png"> -->
+    <link rel="shortcut icon" type="image/png" href="/images/compressed/favicon.png">
 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="styles.css">
@@ -229,7 +229,7 @@
 
       <div class="contact-form__text">
         <p>To learn more about me and my services you can reach out directly on the email below, or fill in the contact form below and I'll get back to you.</p>
-        <a class="email-address" href="consciousmindcoaching@gmail.com">consciousmindcoaching@gmail.com</a>
+        <a class="email-address" href="mailto:consciousmindcoaching@gmail.com">consciousmindcoaching@gmail.com</a>
       </div>
       
       <div class="contact-section__container">
@@ -239,7 +239,7 @@
             <img src="images/compressed/contact/Autumn_transparent.png" alt="Conscious Mind Coaching: Contact Image">
           </div>
     
-          <form class="contact-form__right-side validate-form">
+          <form action="https://formspree.io/mqkyrpbj" method="POST" class="contact-form__right-side validate-form">
     
             <div class="contact-form__input--wrap validate-input" data-validate = "Name is required">
               <input class="contact-form__input" type="text" name="name" placeholder="Name">
@@ -247,7 +247,7 @@
             </div>
     
             <div class="contact-form__input--wrap validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-              <input class="contact-form__input" type="text" name="email" placeholder="Email">
+              <input class="contact-form__input" type="email" name="_replyto" placeholder="Email">
               <span class="contact-form__input--shadow"></span>
             </div>
     
@@ -262,9 +262,7 @@
             </div>
     
             <div class="contact-button__container">
-              <button class="generic-button about-button">
-                  Send Email
-              </button>
+              <input class="generic-button about-button" type="submit" value="Send Message">
             </div>
           </form>
         </div>
@@ -284,7 +282,7 @@
       <div class="instagram-link">
         <a href="https://www.instagram.com/consciousmindcoaching/" target="_blank">
           <i class="fab fa-instagram"></i>
-          <p>Connect with us on Instagram</p>
+          <p>Connect <span class="mobile-remove">with me</span> on Instagram</p>
         </a>
       </div>
 
