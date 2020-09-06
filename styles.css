@@ -439,6 +439,9 @@ a {
 
 /* ******************** < VALUES STYLES > ******************** */
 
+.white {
+  display: none;
+}
 
 .icons-section__container {
   align-items: center;
@@ -456,13 +459,27 @@ a {
   width: 30rem;
 }
 
-.icons-section__box:hover .icons-section__box--text h2 {
+.icons-section__box:hover {
+  background-color: #697b5e;
   /* color: rgb(70, 87, 59); */
-  border-bottom: 1px solid #697b5e;
-  margin: 0 0 .9rem; 
+  /* border-bottom: 1px solid #697b5e; */
+  /* margin: 0 0 1rem;  */
+}
+
+.icons-section__box:hover .icons-section__box--text h2, .icons-section__box:hover .icons-section__box--text p {
+  color: #fff8ee;
+}
+
+.icons-section__box:hover .green {
+  display: none;
+}
+
+.icons-section__box:hover .white {
+  display: initial;
 }
 
 .icons-section__box--icon {
+  padding-top: 3rem;
   text-align: center;
 }
 
@@ -476,7 +493,7 @@ a {
 }
 
 .icons-section__box--text h2 {
-  color: rgb(70, 87, 59);
+  color: #697b5e;
   font-size: 1.8rem;
   font-weight: 200;
   letter-spacing: 0.1px;
@@ -486,6 +503,7 @@ a {
 }
 
 .icons-section__box--text p {
+  color: #697b5e;
   font-size: 1.45rem;
   font-weight: 300;
   height: 10rem;
@@ -839,8 +857,8 @@ textarea.contact-form__input + .contact-form__input--shadow {
 .photo-box {
   background-position: center;
   background-size: cover;
-  flex: 0 0 15vw;
-  height: 15vw;
+  flex: 0 0 15.5vw;
+  height: 15.5vw;
   margin: .25vw;
   opacity: 0.8;
 }
@@ -864,7 +882,7 @@ textarea.contact-form__input + .contact-form__input--shadow {
 .instagram-link {
   background-color: #697b5e;
   flex: 0 0 33.5vw;
-  height: 15vw;
+  height: 15.5vw;
   margin: 0.25vw;
   opacity: 0.8;
   position: relative;
@@ -900,7 +918,7 @@ textarea.contact-form__input + .contact-form__input--shadow {
   align-items: center;
   background-color: #ffdecf;
   position: relative;
-  height: 30vh;
+  height: 38vh;
   /* margin: 3rem 0 0; */
 }
 
@@ -912,7 +930,7 @@ textarea.contact-form__input + .contact-form__input--shadow {
 }
 
 .footer-logo img {
-  height: 10rem;
+  height: 9rem;
 }
 
 ul.footer-nav {
@@ -941,7 +959,7 @@ ul.footer-nav {
 .footer-nav a {
   color: #767c77;
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 300;
   text-decoration: none;
 }
