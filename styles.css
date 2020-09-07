@@ -56,10 +56,17 @@ a {
   color: #767c77;
   font-family: 'Spartan', sans-serif;
   font-size: 3.5rem;
-  font-weight: 100;
+  font-weight: 400;
   margin: 5vh auto 2vh;
   position: relative;
   text-align: center;
+}
+
+.underline {
+  border-bottom: 1.5rem solid rgba(221, 171, 120, 0.2);
+  display: inline-block;
+  line-height: 0.1;
+  width: auto;
 }
 
 .generic-button {
@@ -155,14 +162,47 @@ a {
   padding-right: 0;
 }
 .header-nav a {
-  color: #3f4441;
-  font-family: 'Poppins', sans-serif;
+  color: #767c77;
+  font-family: 'Saira Condensed', sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
+  letter-spacing: 2px;
   text-decoration: none;
 }
 .header-nav a:hover {
   color: #ba7967
+}
+
+.divider {
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.language {
+  background-color: rgba(133, 163, 146, 0.5);
+  border-radius: 100%;
+  height: 3rem;
+  margin-right: 0.5vw;
+  padding: .3rem;
+  position: relative;
+  vertical-align: -50%;
+  width: 3rem;
+}
+
+.language:hover {
+  background-color: rgba(133, 163, 146, 0.9);
+}
+
+.language a {
+  color: rgb(255, 254, 250);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.language a:hover {
+  color: rgb(255, 254, 250);
 }
 
 /* ******************** < HERO STYLES > ******************** */
@@ -175,12 +215,12 @@ a {
 .hero-image {
   background: 
     linear-gradient(
-      rgba(118, 124, 119, 0.5),
-      rgba(118, 124, 119, 0.5)
+      rgba(118, 124, 119, 0.2),
+      rgba(118, 124, 119, 0.2)
     ),
-    url(images/compressed/cover/favourites/forest2r.jpg);
+    url(images/compressed/cover/favourites/rocks4.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 50% 30%;
   position: relative;
 }
 
@@ -247,13 +287,13 @@ a {
 .service-box__image {
   background-position: right center;
   background-size: cover;
-  flex: 0 1 52%;
+  flex: 0 1 55%;
 }
 
 .individuals-image {
   background-image: url("/images/compressed/services/private/private.jpg");
-  background-position: 92% 90%;
-  background-size: 120% 120%;
+  background-position: center;
+  background-size: cover;
 }
 
 .yoga-image {
@@ -301,16 +341,18 @@ a {
 }
 
 .service-box__text {
-  flex: 0 1 48%;
+  flex: 0 1 45%;
   position: relative;
 }
 
 .service-box__text h2 {
-  font-size: 1.65rem;
+  font-size: 1.55rem;
   font-weight: 500;
   left: 50%;
+  letter-spacing: 0.8px;
   position: absolute;
   text-align: center;
+  text-transform: uppercase;
   top: 21%;
   transform: translate(-50%, -50%); 
   width: 90%;
@@ -324,10 +366,11 @@ a {
   text-align: center;
   top: 55%;
   transform: translate(-50%, -50%); 
-  width: 90%;
+  width: 82%;
 }
 
 .services-button {
+  font-size: 1.2rem;
   left: 50%;
   position: absolute;
   top: 100%;
@@ -372,7 +415,7 @@ a {
 }
 
 .about-image {
-  background-image: url(/images/compressed/about/kristina_filter_2.jpg);
+  background-image: url(/images/compressed/about/kristina_filter_2b.jpg);
   background-position: center;
   background-size: cover;
   flex: 0 0 auto;
@@ -387,10 +430,11 @@ a {
 }
 
 .about-text h1 {
-  color: #767c77;
+  color: #697b5e ;
+  /* #767c77 */
   font-family: 'Spartan', sans-serif;
   font-size: 3.5rem;
-  font-weight: 100;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -507,7 +551,7 @@ a {
   font-size: 1.45rem;
   font-weight: 300;
   height: 10rem;
-  text-align: justify;
+  text-align: center;
 }
 
 /* ******************** < TESTIMONIAL STYLES > ******************** */
@@ -529,10 +573,15 @@ a {
 /* SLIDER STYLES */
 .testimonials-container {
 	position: relative;
-	width: 100vw;
-	height: 85vh;
+	width: 90vw;
+	height: 75vh;
 	overflow: hidden;
 }
+
+.testimonial-header__container {
+  display: flex;
+}
+
 .testimonials-container.ie9 nav div span {
 	display: none;
 }
@@ -554,7 +603,8 @@ a {
 	width: 135vh;
 	height: 135vh;
 	border: solid rgba(0,0,0,0.2);
-	border-width: 0;
+  border-width: 0;
+  /* opacity: 0.3; */
 	transform: translate(-50%, -50%);
 	pointer-events: none;
 	transition: border-width .4s .6s;
@@ -613,7 +663,7 @@ blockquote span {
 	width: 5rem;
 	height: 5rem;
 	margin-top: -2.5rem;
-	list-style: none;
+  list-style: none;
 }
 .testimonials-arrows div:last-of-type {
 	left: auto;
@@ -678,7 +728,9 @@ blockquote span {
 /* ******************** < CONTACT STYLES > ******************** */
 
 .contact-section {
+  display: flex;
   flex: 1 1 0;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -849,7 +901,7 @@ textarea.contact-form__input + .contact-form__input--shadow {
 
 .photo-box__container {
   display: flex;
-  flex: 0 0 64vw;
+  flex: 0 0 65.25vw;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -857,10 +909,14 @@ textarea.contact-form__input + .contact-form__input--shadow {
 .photo-box {
   background-position: center;
   background-size: cover;
-  flex: 0 0 15.5vw;
-  height: 15.5vw;
-  margin: .25vw;
-  opacity: 0.8;
+  flex: 0 0 16vw;
+  height: 16vw;
+  margin: .25vw 0 .25vw .25vw;
+  /* opacity: 0.8; */
+}
+
+.photo-box:last-child {
+  margin-right: 0.25vw;
 }
 
 .photo-1 {
@@ -881,9 +937,9 @@ textarea.contact-form__input + .contact-form__input--shadow {
 
 .instagram-link {
   background-color: #697b5e;
-  flex: 0 0 33.5vw;
-  height: 15.5vw;
-  margin: 0.25vw;
+  flex: 0 0 34.5vw;
+  height: 16vw;
+  margin: 0.25vw 0 0.25vw 0.25vw;
   opacity: 0.8;
   position: relative;
 }
@@ -916,7 +972,7 @@ textarea.contact-form__input + .contact-form__input--shadow {
 
 .footer {
   align-items: center;
-  background-color: #ffdecf;
+  background-color: #4f8a8b;
   position: relative;
   height: 38vh;
   /* margin: 3rem 0 0; */
@@ -925,12 +981,22 @@ textarea.contact-form__input + .contact-form__input--shadow {
 .footer-logo {
   left: 50%;
   position: absolute;
-  top: 50%;
+  top: 25%;
   transform: translate(-50%, -50%);
 }
 
 .footer-logo img {
   height: 9rem;
+}
+
+.footer-logo li {
+  color: rgba(255, 254, 250, 0.8);
+  list-style: none;
+  font-family: 'Spartan';
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
 }
 
 ul.footer-nav {
@@ -941,7 +1007,7 @@ ul.footer-nav {
   left: 50%;
   position: absolute;
   text-align: center;
-  top: 20%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -957,22 +1023,27 @@ ul.footer-nav {
 }
 
 .footer-nav a {
-  color: #767c77;
-  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 254, 250, 0.5);
+  font-family: 'Saira Condensed', sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
+  letter-spacing: 2px;
   text-decoration: none;
 }
 
+.footer-nav a:hover {
+  color: rgba(255, 254, 250, 0.8);
+}
+
 .copyright {
-  color: #767c77;
+  color: rgba(255, 254, 250, 0.5);
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   font-weight: 200;
   left: 50%;
   position: absolute;
   text-align: center;
-  top: 80%;
+  top: 75%;
   transform: translate(-50%, -50%);
 }
 
