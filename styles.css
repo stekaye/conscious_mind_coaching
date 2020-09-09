@@ -78,11 +78,13 @@ h1.mobile-only {
   border: none;
   border-radius: 15px;
   color: #fff8ee;
+  display: flex;
   font-family: 'Poppins', sans-serif;
   font-size: 1.7rem;
   font-weight: 300;
-  padding: 1.5rem 2rem;
+  /* padding: 1.5rem 2rem; */
   text-transform: uppercase;
+  width: fit-content;
 }
 
 .generic-button:hover {
@@ -101,19 +103,15 @@ h1.mobile-only {
   top: 100.5%;
 }
 
+.generic-button span {
+  flex: 1;
+  margin: 0 auto;
+  padding: 1.5rem 2.2rem;
+}
+
 .bring-forward {
   color: #fffdf9;
   z-index: 1000;
-}
-
-.header-arrow {
-  display: none;
-  /* left: 50%;
-  opacity: 0.1;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 10rem; */
 }
 
 /* ******************** < HEADER STYLES > ******************** */
@@ -125,7 +123,7 @@ h1.mobile-only {
   flex: 1;
   flex-direction: row-reverse;
   height: 15vh;
-  padding: 0 4vw;
+  padding: 2vh 4vw 1vh;
   position: fixed;
   width: 100%;
   z-index: 20;
@@ -225,7 +223,7 @@ h1.mobile-only {
 /* ******************** < HERO STYLES > ******************** */
 
 .hero {
-  flex: 1 1 82vh;
+  flex: 1 1 80vh;
   margin: 15vh 4vw 0;
 }
 
@@ -235,7 +233,7 @@ h1.mobile-only {
       rgba(118, 124, 119, 0.2),
       rgba(118, 124, 119, 0.2)
     ),
-    url(images/compressed/cover/favourites/rocks4.jpg);
+    url(images/compressed/cover/favourites/rocks6.jpg);
   background-size: cover;
   background-position: 50% 30%;
   position: relative;
@@ -274,11 +272,10 @@ h1.mobile-only {
   flex: 1;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 4vh 0 4rem;
+  margin: 4vh 0;
 }
 
 .service-box {
-  /* border: 2px solid rgba(0, 0, 0, 0.8); */
   border: 2px solid #697b5e;
   display: flex;
   flex: 0 1 auto;
@@ -748,6 +745,7 @@ blockquote span {
   display: flex;
   flex: 1 1 0;
   flex-direction: column;
+  min-height: fit-content;
   width: 100%;
 }
 
