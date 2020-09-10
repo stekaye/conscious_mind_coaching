@@ -1,12 +1,12 @@
 var currentHeight = $(".header").innerHeight();
 console.log(currentHeight);
 
-$("a").click(function(event){
+$(".scroll").click(function(event){
 	event.preventDefault();
   var pageId = $(this).attr("data-page");
   $("html, body").animate({ 
 		scrollTop: $("#"+pageId).offset().top - currentHeight
-	}, 200);
+	}, 300);
 });
 
 (function() {

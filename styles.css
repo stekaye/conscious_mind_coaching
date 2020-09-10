@@ -83,8 +83,15 @@ h1.mobile-only {
   font-size: 1.7rem;
   font-weight: 300;
   /* padding: 1.5rem 2rem; */
+  margin: 0 auto;
   text-transform: uppercase;
   width: fit-content;
+}
+
+.generic-button span {
+  flex: 1;
+  margin: 0 auto;
+  padding: 1.5rem 2.2rem;
 }
 
 .generic-button:hover {
@@ -101,12 +108,6 @@ h1.mobile-only {
 
 .generic-button:active {
   top: 100.5%;
-}
-
-.generic-button span {
-  flex: 1;
-  margin: 0 auto;
-  padding: 1.5rem 2.2rem;
 }
 
 .bring-forward {
@@ -745,6 +746,7 @@ blockquote span {
   display: flex;
   flex: 1 1 0;
   flex-direction: column;
+  margin-bottom: 6rem;
   min-height: fit-content;
   width: 100%;
 }
@@ -804,6 +806,12 @@ textarea:-ms-input-placeholder { color: #9c9a9a; }
 
 .contact-form__left-side img {
   max-width: 100%;
+}
+
+.contact-home__image {
+  height: auto;
+  margin: 2vh auto;
+  width: 24vw;
 }
 
 .contact-form__right-side {
@@ -955,7 +963,7 @@ textarea.contact-form__input + .contact-form__input--shadow {
 }
 
 .instagram-link {
-  background-color: #697b5e;
+  background-color: #ae8b75;
   flex: 0 0 34.5vw;
   height: 16vw;
   margin: 0.25vw 0 0.25vw 0.25vw;
@@ -991,15 +999,15 @@ textarea.contact-form__input + .contact-form__input--shadow {
 
 .footer {
   align-items: center;
-  background-color: #4f8a8b;
+  background-color: #697b5e;
   position: relative;
   height: 38vh;
   /* margin: 3rem 0 0; */
 }
 
-.contact-footer {
+/* .contact-footer {
   background-color: #697b5e;
-}
+} */
 
 .footer-logo {
   left: 50%;
@@ -1019,6 +1027,7 @@ textarea.contact-form__input + .contact-form__input--shadow {
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0.8px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -1131,6 +1140,26 @@ ul.footer-nav {
     width: 80%;
   }
 
+  .contact-home__image {
+    width: 35vw;
+  }
+
+  .footer {
+    height: 25vh;
+  }
+
+  .footer-logo {
+    top: 30%;
+  }
+
+  .footer-nav {
+    top: 60%;
+  }
+
+  .copyright {
+    top: 85%;
+  }
+
 }
 
 
@@ -1219,6 +1248,10 @@ ul.footer-nav {
   blockquote span {
     font-size: 1.8rem;
     font-weight: 100;
+  }
+
+  .contact-page {
+    margin-top: 24vh;
   }
 
   .instagram-section {
@@ -1345,6 +1378,10 @@ ul.footer-nav {
   .contact-form__right-side {
     width: 100%;
   }
+
+  .contact-button {
+    margin-top: 3rem;
+  }
   
   .photo-box {
     flex: 0 0 24vw;
@@ -1390,7 +1427,7 @@ ul.footer-nav {
 @media (max-width: 600px) {
 
   .generic-button {
-    display: block;
+    font-size: 1.4rem;
   }
 
   .section-header {
@@ -1438,18 +1475,18 @@ ul.footer-nav {
   }
 
   .service-box {
-    height: 68vh;
-    width: 85vw;
+    height: 42rem;
+    width: 32rem;
   }
 
   .service-box__text p {
-    font-size: 2.05vh;
+    font-size: 1.4rem;
     line-height: 1.7;
-    width: 88%;
+    width: 85%;
   }
 
   .service-box__text h2 {
-    font-size: 4vw;
+    font-size: 1.5rem;
   }
 
   .about-section {
@@ -1535,7 +1572,13 @@ ul.footer-nav {
   }
 
   .contact-form__text {
-    width: 95%;
+    font-size: 1.65rem;
+    width: 80%;
+  }
+
+  .contact-home__image {
+    margin: 4vh auto 0;
+    width: 50vw;
   }
 
   .instagram-link p {
@@ -1579,6 +1622,14 @@ ul.footer-nav {
 
 @media (max-width: 380px) {
 
+  .generic-button {
+    font-size: 1.1rem;
+  }
+
+  .header {
+    height: 22.5vh;
+  }
+
   .header-logo img {
     height: 4.5rem;
     margin-top: .3vh;
@@ -1602,20 +1653,75 @@ ul.footer-nav {
     width: 2.2rem;
   }
 
+  .hero-text {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .service-box {
+    height: 40rem;
+    width: 28rem;
+  }
+
+  .service-box__text h2 {
+    font-size: 1.25rem;
+  }
+
   .service-box__text p {
-    font-size: 2.3vh;
+    font-size: 1.2rem;
   }
 
   .icons-section__box--text p {
     font-size: 1.5rem;
   }
 
+  .contact-form__text {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  .contact-home__image {
+    margin: 4vh auto 0;
+    width: 50vw;
+  }
+
   .footer-logo li {
     font-size: 1.8rem;
   }
 
+  @media (max-width: 325px) {
 
-}
+    .section-header {
+      font-size: 2.2rem;
+    }
+  
+  
+    h1.mobile-only {
+      font-size: 2.2rem;
+    }
+
+    .service-box {
+      height: 38rem;
+      width: 28rem;
+    }
+  
+    .service-box__text h2 {
+      font-size: 1.3rem;
+    }
+  
+    .service-box__text p {
+      font-size: 1.3rem;
+    }
+
+    .icons-section__box--text {
+      margin: 0 1.5rem;
+    }
+
+    .icons-section__box--text p {
+      font-size: 1.4rem;
+    }
+  
+  }}
 
 
 
