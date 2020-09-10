@@ -749,6 +749,10 @@ blockquote span {
   width: 100%;
 }
 
+.contact-page {
+  margin-top: 18vh;
+}
+
 input {
 	outline: none;
 	border: none;
@@ -991,6 +995,10 @@ textarea.contact-form__input + .contact-form__input--shadow {
   position: relative;
   height: 38vh;
   /* margin: 3rem 0 0; */
+}
+
+.contact-footer {
+  background-color: #697b5e;
 }
 
 .footer-logo {
