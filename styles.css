@@ -641,21 +641,24 @@ h1.mobile-only {
 .testimonials-content blockquote {
   font-family: 'Poppins', sans-serif;;
 	position: absolute;
-	top: 55%;
+	top: 60%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
 	z-index: 200;
-	max-width: 40%;
+	max-width: 45%;
 }
 blockquote p {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 200;
 	margin-bottom: 3rem;
 }
 blockquote span {
   color: #fff8ee;
+  display: block;
   font-size: 1.8rem;
   font-weight: 100;
+  margin-bottom: .5rem;
 }
 /* CURRENT SLIDE
 ---------------------------------*/
