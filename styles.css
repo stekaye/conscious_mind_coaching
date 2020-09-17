@@ -234,7 +234,7 @@ h1.mobile-only {
       rgba(118, 124, 119, 0.2),
       rgba(118, 124, 119, 0.2)
     ),
-    url(images/compressed/cover/favourites/rocks7.jpg);
+    url(images/compressed/cover/favourites/rocks6.jpg);
   background-size: cover;
   background-position: 50% 30%;
   position: relative;
@@ -1449,16 +1449,12 @@ ul.footer-nav {
   }
 
   .header-logo img {
-    height: 6rem;
-    margin-top: .5vh;
+    height: 7rem;
+    /* margin-top: .5vh; */
   }
 
   .header-nav {
-    margin-top: 0;
-  }
-
-   ul.language-links {
-    margin-top: 1vh;
+    margin: 1rem 0 .5rem;
   }
 
   .nav-links a {
@@ -1616,13 +1612,17 @@ ul.footer-nav {
     width: 95%;
   }
 
+  .footer {
+    height: 28rem;
+  }
+
   /* .footer-logo img {
     height: 6.5rem;
   } */
 
   .footer-logo li {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin: 1rem 0;
     text-align: center;
     width: 85vw;
@@ -1649,14 +1649,14 @@ ul.footer-nav {
   }
 
   .header {
-    height: 20vh;
+    height: 22vh;
   }
 
   /* Was 22.5 with language buttons */
 
   .header-logo img {
-    height: 5rem;
-    margin: 2px 0 .4rem;
+    height: 5.6rem;
+    margin: 0 0 .5rem;
   }
 
   /* MT was .3vh with language buttons */
@@ -1665,8 +1665,12 @@ ul.footer-nav {
     margin-top: 5vh;
   } */
 
+  .nav-links > li {
+    padding-right: 2.4vw;
+  }
+
   .nav-links a {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .language-links a {
@@ -1711,7 +1715,7 @@ ul.footer-nav {
   }
 
   .footer {
-    height: 42vh;
+    height: 22rem;
   }
 
   .footer-logo li {
@@ -1751,7 +1755,7 @@ ul.footer-nav {
     }
 
     .footer-logo li {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   
   }}
