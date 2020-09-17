@@ -42,7 +42,7 @@ $(".scroll").click(function(event){
 		let currentSlide = cdSlider.querySelector("li.current_slide");
 		let prevElement = currentSlide.previousElementSibling;
 		let prevSlide = ( prevElement !== null) ? prevElement : item[item.length-1];
-		let prevColor = prevSlide.getAttribute("data-color");
+		let prevColor = currentSlide.nextElementSibling.getAttribute("data-color");
 		let el = document.createElement('span');
 
 		currentSlide.className = "";
@@ -110,7 +110,8 @@ $(".scroll").click(function(event){
 		let currentSlide = cdSlider.querySelector("li.current_slide");
 
 		let nextColor = ( currentSlide.nextElementSibling !== null ) ? currentSlide.nextElementSibling.getAttribute("data-color") : item[0].getAttribute("data-color");
-		let	prevColor = ( currentSlide.previousElementSibling !== null ) ? currentSlide.previousElementSibling.getAttribute("data-color") : item[item.length-1].getAttribute("data-color");
+		let prevColor = ( currentSlide.nextElementSibling !== null ) ? currentSlide.nextElementSibling.getAttribute("data-color") : item[0].getAttribute("data-color");
+		// let	prevColor = ( currentSlide.previousElementSibling !== null ) ? currentSlide.previousElementSibling.getAttribute("data-color") : item[item.length-1].getAttribute("data-color");
 
 		if (item.length > 2) {
 			nav.querySelector(".prev").style.backgroundColor = prevColor;

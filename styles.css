@@ -234,7 +234,7 @@ h1.mobile-only {
       rgba(118, 124, 119, 0.2),
       rgba(118, 124, 119, 0.2)
     ),
-    url(images/compressed/cover/favourites/rocks6.jpg);
+    url(images/compressed/cover/favourites/rocks7.jpg);
   background-size: cover;
   background-position: 50% 30%;
   position: relative;
@@ -830,8 +830,10 @@ textarea:-ms-input-placeholder { color: #9c9a9a; }
   text-align: center;
   margin: 0 auto;
   padding: 3rem 0;
-  width: 50%;
+  width: 35%;
 }
+
+/* Width previously 50%. Change back when previous text added! */
 
 .contact-form__text p {
   margin: 0 0 2rem;
