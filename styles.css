@@ -1475,6 +1475,23 @@ ul.footer-nav {
     margin: 22vh 4vw 0;
   }
 
+  .hero-image {
+    background: 
+      linear-gradient(
+        rgba(118, 124, 119, 0.1),
+        rgba(118, 124, 119, 0.1)
+      ),
+      url(images/compressed/cover/favourites/rocks3.jpg);
+    background-position: 82% 100%;
+    background-size: cover;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+    top: 35%;
+    width: 100%;
+  }
+
   .services-section {
     margin: 8vh 2vw 0;
   }
@@ -1539,7 +1556,7 @@ ul.footer-nav {
   }
 
   .icons-section__box--text p {
-    font-size: 1.65rem;
+    font-size: 1.55rem;
   }
 
   .testimonials-container ul li::before {
@@ -1577,8 +1594,8 @@ ul.footer-nav {
   }
 
   .contact-form__text {
-    font-size: 1.65rem;
-    width: 80%;
+    font-size: 1.6rem;
+    width: 70%;
   }
 
   .contact-home__image {
@@ -1605,7 +1622,7 @@ ul.footer-nav {
 
   .footer-logo li {
     display: inline-block;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin: 1rem 0;
     text-align: center;
     width: 85vw;
@@ -1632,17 +1649,21 @@ ul.footer-nav {
   }
 
   .header {
-    height: 22.5vh;
+    height: 20vh;
   }
+
+  /* Was 22.5 with language buttons */
 
   .header-logo img {
-    height: 4.5rem;
-    margin-top: .3vh;
+    height: 5rem;
+    margin: 2px 0 .4rem;
   }
 
-   ul.language-links {
-    margin-top: 1.5vh;
-  }
+  /* MT was .3vh with language buttons */
+
+   /* ul.language-links {
+    margin-top: 5vh;
+  } */
 
   .nav-links a {
     font-size: 1.1rem;
@@ -1659,8 +1680,7 @@ ul.footer-nav {
   }
 
   .hero-text {
-    font-size: 2rem;
-    width: 100%;
+    font-size: 2.05rem;
   }
 
   .service-box {
@@ -1690,8 +1710,12 @@ ul.footer-nav {
     width: 50vw;
   }
 
+  .footer {
+    height: 42vh;
+  }
+
   .footer-logo li {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   @media (max-width: 325px) {
@@ -1724,6 +1748,10 @@ ul.footer-nav {
 
     .icons-section__box--text p {
       font-size: 1.4rem;
+    }
+
+    .footer-logo li {
+      font-size: 1.6rem;
     }
   
   }}
