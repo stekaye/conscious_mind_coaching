@@ -980,7 +980,7 @@ textarea.contact-form__input + .contact-form__input--shadow {
 }
 
 .photo-4 {
-  background-image: url(/images/compressed/instagram/photo-4.jpg);
+  background-image: url(/images/compressed/instagram/photo-2b.jpg);
 }
 
 .instagram-link {
@@ -1528,17 +1528,17 @@ ul.footer-nav {
 
   .service-box {
     height: 42rem;
-    width: 32rem;
+    width: 35rem;
   }
 
   .service-box__text p {
-    font-size: 1.4rem;
+    font-size: 1.32rem;
     line-height: 1.7;
-    width: 85%;
+    width: 80%;
   }
 
   .service-box__text h2 {
-    font-size: 1.5rem;
+    font-size: 1.28rem;
   }
 
   .about-section {
@@ -1550,6 +1550,10 @@ ul.footer-nav {
     background-position: 50% 20%;
     height: 60vh;
     width: 80vw;
+  }
+
+  .about-text {
+    margin: 3vh 0;
   }
 
   .about-text h1 {
@@ -1722,11 +1726,11 @@ ul.footer-nav {
 
   .service-box {
     height: 40rem;
-    width: 28rem;
+    width: 30rem;
   }
 
   .service-box__text h2 {
-    font-size: 1.25rem;
+    font-size: 2.85vw;
   }
 
   .service-box__text p {
@@ -1791,13 +1795,9 @@ ul.footer-nav {
       height: 38rem;
       width: 28rem;
     }
-  
-    .service-box__text h2 {
-      font-size: 1.3rem;
-    }
-  
+
     .service-box__text p {
-      font-size: 1.3rem;
+      font-size: 1.15rem;
     }
 
     .icons-section__box--text {
