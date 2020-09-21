@@ -42,7 +42,7 @@ $(".scroll").click(function(event){
 		let currentSlide = cdSlider.querySelector("li.current_slide");
 		let prevElement = currentSlide.previousElementSibling;
 		let prevSlide = ( prevElement !== null) ? prevElement : item[item.length-1];
-		let prevColor = currentSlide.nextElementSibling.getAttribute("data-color");
+		let prevColor = prevSlide.getAttribute("data-color");
 		let el = document.createElement('span');
 
 		currentSlide.className = "";

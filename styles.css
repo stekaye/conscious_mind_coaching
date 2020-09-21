@@ -221,6 +221,10 @@ h1.mobile-only {
   color: rgb(255, 254, 250);
 }
 
+.language-links a {
+  font-size: 1.4rem;
+}
+
 /* ******************** < HERO STYLES > ******************** */
 
 .hero {
@@ -361,7 +365,8 @@ h1.mobile-only {
 }
 
 .service-box__text h2 {
-  font-size: 1.12vw;
+  font-family: 'Spartan', sans-serif;
+  font-size: 0.85vw;
   font-weight: 500;
   left: 50%;
   letter-spacing: 0.8px;
@@ -554,7 +559,7 @@ h1.mobile-only {
 .icons-section__box--text h2 {
   color: #697b5e;
   font-size: 1.8rem;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 0.1px;
   padding: 1rem 0;
   margin-bottom: 1rem;
@@ -563,7 +568,7 @@ h1.mobile-only {
 
 .icons-section__box--text p {
   color: #697b5e;
-  font-size: 1.45rem;
+  font-size: 1.44rem;
   font-weight: 300;
   height: 10rem;
   text-align: center;
@@ -648,15 +653,26 @@ h1.mobile-only {
 	z-index: 200;
 	max-width: 45%;
 }
-blockquote p {
+
+blockquote h2 {
+  color: #fff8ee;
   font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
+}
+
+blockquote p {
+  font-size: 1.6rem;
   font-weight: 200;
+  letter-spacing: .2px;
 	margin-bottom: 3rem;
 }
+
 blockquote span {
   color: #fff8ee;
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 100;
   margin-bottom: .5rem;
 }
@@ -1101,7 +1117,27 @@ ul.footer-nav {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
+
+  .header-logo img {
+    height: 6.5rem;
+  }
+
+  .nav-links > li {
+    padding-right: .8vw;
+  }
+
+  .language-links > li {
+    margin-right: .3vw;
+  }
+
+  .nav-links a {
+    font-size: 1.4rem;
+  }
+
+  .language-links a {
+    font-size: 1.1rem;
+  }
 
   .services-boxes {
     flex-wrap: wrap;
@@ -1167,23 +1203,26 @@ ul.footer-nav {
 
 }
 
+@media (max-width: 1000px) {
 
-@media (max-width: 900px) {
-  
   .header {
     align-items: center;
     flex-direction: column-reverse;
     justify-content: center;
-    height: 20vh;
+    height: 22vh;
   }
 
   .header-logo {
     flex: 0;
-    margin-left: 0;
+    margin: 0;
+  }
+
+  .header-logo img {
+    height: 7rem;
   }
 
   .header nav {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
   }
 
@@ -1192,7 +1231,7 @@ ul.footer-nav {
   }
 
   .header-nav {
-    margin-top: .5vh;
+    margin-bottom: 2vh;
   }
 
   .header-nav:first-child {
@@ -1206,34 +1245,34 @@ ul.footer-nav {
   }
 
   .nav-links > li {
-    padding-right: 3vw;
+    padding-right: 2.2vw;
+  }
+
+  .language {
+    height: 2.5rem;
+    width: 2.5rem;
   }
 
    ul.language-links {
-    margin-top: 1.5vh;
+    margin: 0 0 2vh;
   }
 
   .language-links > li {
-    margin-right: 2vw;
+    margin-right: .8vw;
   }
 
   .language-links > li:last-child {
     margin-right: 0;
   }
 
-  .nav-links a {
-    font-size: 1.8rem;
-    font-weight: 200;
-  }
+}
 
-  .language-links a {
-    font-size: 1.6rem;
-  }
+
+@media (max-width: 900px) {
 
   .service-box__text h2 {
     font-size: 1.8vw;
   }
-
 
   .testimonials-container ul li::before {
     /* border-radius: 5%; */
@@ -1450,20 +1489,15 @@ ul.footer-nav {
 
   .header-logo img {
     height: 7rem;
-    /* margin-top: .5vh; */
-  }
-
-  .header-nav {
-    margin: 1rem 0 .5rem;
   }
 
   .nav-links a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 200;
   }
 
-  .language-links a {
-    font-size: 1.1rem;
+  .nav-links > li {
+    padding-right: 1.5vw;
   }
 
   .hero {
@@ -1483,7 +1517,7 @@ ul.footer-nav {
   }
 
   .hero-text {
-    font-size: 2.5rem;
+    font-size: 2rem;
     top: 35%;
     width: 100%;
   }
@@ -1656,7 +1690,6 @@ ul.footer-nav {
 
   .header-logo img {
     height: 5.6rem;
-    margin: 0 0 .5rem;
   }
 
   /* MT was .3vh with language buttons */
@@ -1666,11 +1699,11 @@ ul.footer-nav {
   } */
 
   .nav-links > li {
-    padding-right: 2.4vw;
+    padding-right: 1.4vw;
   }
 
   .nav-links a {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 
   .language-links a {
@@ -1684,7 +1717,7 @@ ul.footer-nav {
   }
 
   .hero-text {
-    font-size: 2.05rem;
+    font-size: 1.7rem;
   }
 
   .service-box {
@@ -1724,13 +1757,34 @@ ul.footer-nav {
 
   @media (max-width: 325px) {
 
+    #delete {
+      display: none;
+      padding: 0;
+      margin: 0;
+    }
+
     .section-header {
       font-size: 2.2rem;
     }
   
-  
     h1.mobile-only {
       font-size: 2.2rem;
+    }
+
+    .nav-links > li {
+      padding-right: 2vw;
+    }
+  
+    .nav-links a {
+      font-size: 1rem;
+    }
+  
+    .language-links a {
+      font-size: 1rem;
+    }
+
+    .hero-text {
+      font-size: 1.5rem;
     }
 
     .service-box {
