@@ -404,30 +404,6 @@ h1.mobile-only {
   transform: translate(-50%, -50%);
 }
 
-/* .individuals-button {
-  background-color: #697b5e;
-}
-
-.individuals-button:hover {
-  background-color: rgb(70, 87, 59);
-}
-
-.yoga-button {
-  background-color: #e7b2a5;
-}
-
-.yoga-button:hover {
-  background-color: rgb(181, 128, 115);
-}
-
-.orgs-button {
-  background-color: #ae8b75;
-}
-.orgs-button:hover {
-  background-color: rgb(124, 89, 67);
-} */
-
-
 /* ******************** < ABOUT STYLES > ******************** */
 
 #about {
@@ -592,11 +568,13 @@ h1.mobile-only {
 }
 
 #testimonials .section-header {
-  margin-top: 8rem;
+  font-size: 3rem;
+  margin-top: 9rem;
 }
 
 
 /* SLIDER STYLES */
+
 .testimonials-container {
 	position: relative;
 	width: 90vw;
@@ -662,7 +640,7 @@ h1.mobile-only {
 
 blockquote h2 {
   color: #fff8ee;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: 1px;
   margin-bottom: 2rem;
@@ -992,7 +970,7 @@ textarea.contact-form__input + .contact-form__input--shadow {
 
 .instagram-link {
   background-color: #ae8b75;
-  flex: 0 0 34.5vw;
+  flex: 0 0 33.25vw;
   height: 16vw;
   margin: 0.25vw 0 0.25vw 0.25vw;
   opacity: 0.8;
