@@ -73,6 +73,13 @@ h1.mobile-only {
   width: auto;
 }
 
+.underline-white {
+  border-bottom: 1.5rem solid rgba(255, 255, 255, 0);
+  display: inline-block;
+  line-height: 0.1;
+  width: auto;
+}
+
 .generic-button {
   background-color: #697b5e;
   border: none;
@@ -239,7 +246,7 @@ h1.mobile-only {
       rgba(118, 124, 119, 0.2),
       rgba(118, 124, 119, 0.2)
     ),
-    url(images/compressed/cover/favourites/rocks9.jpg);
+    url(images/compressed/cover/favourites/rocks6.jpg);
   background-size: cover;
   background-position: 50% 28%;
   position: relative;
@@ -968,19 +975,19 @@ textarea.contact-form__input + .contact-form__input--shadow {
 }
 
 .photo-1 {
-  background-image: url(/images/compressed/instagram/photo-1.jpg);
+  background-image: url(/images/compressed/instagram/photo1-final.jpg);
 }
 
 .photo-2 {
-  background-image: url(/images/compressed/instagram/photo-2.jpg);
+  background-image: url(/images/compressed/instagram/photo-2final.jpg);
 }
 
 .photo-3 {
-  background-image: url(/images/compressed/instagram/photo-3b.jpg);
+  background-image: url(/images/compressed/instagram/photo-3finaljpg.jpg);
 }
 
 .photo-4 {
-  background-image: url(/images/compressed/instagram/photo-2b.jpg);
+  background-image: url(/images/compressed/instagram/photo-4final.jpg);
 }
 
 .instagram-link {
@@ -1541,12 +1548,17 @@ ul.footer-nav {
     display: none;
   }
 
+  .underline-white {
+    border-bottom: 1.5rem solid rgba(255, 255, 255, 0.2);
+  }
+
   h1.mobile-only {
     font-size: 2.5rem;
   }
 
   .header-logo img {
     height: 7rem;
+    margin-bottom: 0.2rem;
   }
 
   .nav-links a {
@@ -1559,8 +1571,8 @@ ul.footer-nav {
   }
 
   .hero {
-    flex: 1 1 75vh;
-    margin: 22vh 4vw 0;
+    flex: 1 1 70vh;
+    margin: 24vh 4vw 0;
   }
 
   .hero-image {
@@ -1652,7 +1664,7 @@ ul.footer-nav {
   }
 
   .testimonials-container {
-    height: 65vh;
+    height: 60vh;
   }
 
   .testimonials-container ul li::before {
@@ -1670,7 +1682,7 @@ ul.footer-nav {
   }
 
   .testimonials-content blockquote {
-    top: 51%;
+    top: 54%;
     width: 100%;
   }
   blockquote p {
