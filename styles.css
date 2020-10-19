@@ -569,7 +569,10 @@ h1.mobile-only {
 
 #testimonials .section-header {
   font-size: 3rem;
+  left: 50%;
   margin-top: 9rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -584,6 +587,7 @@ h1.mobile-only {
 
 .testimonial-header__container {
   display: flex;
+  justify-content: center;
 }
 
 .testimonials-container.ie9 nav div span {
@@ -1655,7 +1659,7 @@ ul.footer-nav {
   .testimonial-header__container {
     position: absolute;
     top: -5%;
-    left: 20%;
+    left: 50%;
     /* transform: translate(-50%, -50%); */
   }
 
