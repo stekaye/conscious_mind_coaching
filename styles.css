@@ -1908,8 +1908,13 @@ ul.footer-nav {
       line-height: 1.7;
       margin: 0 0.2rem 2rem;
     }
+
     .testimonial-info {
       font-size: 1rem;
+    }
+
+    .instagram-link p {
+      font-size: 0.95rem;
     }
 
     .footer-nav {
