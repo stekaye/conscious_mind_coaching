@@ -149,7 +149,7 @@ h1.mobile-only {
   text-decoration: none;
 }
 .header-logo img {
-  height: 8rem;
+  height: 7rem;
 }
 
 .header nav {
@@ -199,8 +199,9 @@ h1.mobile-only {
   border-radius: 100%;
   height: 3rem;
   margin-right: 0.5vw;
-  padding: .3rem;
+  /* padding: .3rem; */
   position: relative;
+  text-align: center;
   vertical-align: -50%;
   width: 3rem;
 }
@@ -238,7 +239,7 @@ h1.mobile-only {
       rgba(118, 124, 119, 0.2),
       rgba(118, 124, 119, 0.2)
     ),
-    url(images/compressed/cover/favourites/rocks6.jpg);
+    url(images/compressed/cover/favourites/rocks9.jpg);
   background-size: cover;
   background-position: 50% 28%;
   position: relative;
@@ -248,7 +249,6 @@ h1.mobile-only {
   color: rgba(255, 254, 250, 0.9);;
   font-family: 'Alata', sans-serif;
   font-size: 2.8rem;
-  font-weight: 200;
   position: absolute;
   left: 50%;
   text-align: center;
@@ -463,7 +463,6 @@ h1.mobile-only {
   display: inline;
   font-family: 'Caveat', cursive;
   font-size: 5rem;
-  font-weight: 700;
 }
 
 .about-text p {
@@ -651,15 +650,16 @@ h1.mobile-only {
   text-align: center;
   transform: translate(-50%, -50%);
 	z-index: 200;
-	max-width: 45%;
+	max-width: 41%;
 }
 
 blockquote h2 {
   color: #fff8ee;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 400;
   letter-spacing: 1px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 blockquote p {
@@ -669,7 +669,7 @@ blockquote p {
 	margin-bottom: 3rem;
 }
 
-blockquote span {
+.testimonial-info {
   color: #fff8ee;
   display: block;
   font-size: 1.6rem;
@@ -976,7 +976,7 @@ textarea.contact-form__input + .contact-form__input--shadow {
 }
 
 .photo-3 {
-  background-image: url(/images/compressed/instagram/photo-3.jpg);
+  background-image: url(/images/compressed/instagram/photo-3b.jpg);
 }
 
 .photo-4 {
@@ -1106,6 +1106,64 @@ ul.footer-nav {
 
 
 /* ****************** *M*E*D*I*A*S*T*Y*L*E*S* ****************** */
+
+/* WIDE - DESKTOP DEVICES */
+
+@media (min-width: 1600px) {
+  .hero-text {
+    font-size: 3.2rem;
+    top: 48%;
+  }
+
+  .service-box {
+    height: 56vh;
+  }
+
+  .service-box__text h2 {
+    font-size: .9vw;
+    width: 94%;
+  }
+
+  .service-box__text p {
+    font-size: 1.75rem;
+  }
+
+  .icons-section__box {
+    width: 34rem;
+  }
+
+  .icons-section__box--text h2 {
+    font-size: 2rem;
+    letter-spacing: 0.4px;
+  }
+  
+  .icons-section__box--text p {
+    font-size: 1.55rem;
+    height: 10rem;
+  }
+
+  .testimonials-content blockquote {
+    top: 58%;
+    max-width: 49%;
+  }
+
+  blockquote h2 {
+    font-size: 2.2rem;
+    margin-bottom: 5rem;
+  }
+
+  blockquote p {
+    font-size: 1.75rem;
+    letter-spacing: .4px;
+    line-height: 2;
+    margin-bottom: 5rem;
+  }
+
+  .testimonial-info {
+    font-size: 1.75rem;
+    margin-bottom: .5rem;
+  }
+}
 
 @media (max-width: 1200px) {
   .contact1-pic {
@@ -1289,7 +1347,7 @@ ul.footer-nav {
     font-size: 2.5rem;
     margin-bottom: 3rem;
   }
-  blockquote span {
+  .testimonial-info {
     font-size: 1.8rem;
     font-weight: 100;
   }
@@ -1430,7 +1488,7 @@ ul.footer-nav {
   .photo-box {
     flex: 0 0 24vw;
     height: 24vw;
-    margin: 1vw;
+    margin: 1vw 1vw 1vw 0;
     opacity: 0.8;
   }
 
@@ -1511,14 +1569,14 @@ ul.footer-nav {
         rgba(118, 124, 119, 0.1),
         rgba(118, 124, 119, 0.1)
       ),
-      url(images/compressed/cover/favourites/rocks3.jpg);
+      url(images/compressed/cover/favourites/rocks6.jpg);
     background-position: 82% 100%;
     background-size: cover;
   }
 
   .hero-text {
     font-size: 2rem;
-    top: 35%;
+    top: 13%;
     width: 100%;
   }
 
@@ -1565,7 +1623,7 @@ ul.footer-nav {
   .about-text h2 {
     display: block;
     font-size: 5rem;
-    text-align: center;
+    text-align: left;
   }
 
   .about-button {
@@ -1593,6 +1651,10 @@ ul.footer-nav {
     font-size: 1.55rem;
   }
 
+  .testimonials-container {
+    height: 65vh;
+  }
+
   .testimonials-container ul li::before {
     border-radius: 5%;
     width: 120vh;
@@ -1600,21 +1662,29 @@ ul.footer-nav {
     opacity: 0.3;
   }
 
+  .testimonial-header__container {
+    position: absolute;
+    top: -5%;
+    left: 20%;
+    /* transform: translate(-50%, -50%); */
+  }
+
   .testimonials-content blockquote {
-    top: 50%;
+    top: 51%;
     width: 100%;
   }
   blockquote p {
-    font-size: 1.6rem;
-    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 0 .6rem 2.5rem;
   }
-  blockquote span {
+  .testimonial-info {
     font-size: 1.2rem;
     font-weight: 100;
   }
 
   .testimonials-arrows div {
-    top: 80%;
+    top: 85%;
     left: 6%;
     width: 4.5rem;
     height: 4.5rem;
@@ -1741,6 +1811,15 @@ ul.footer-nav {
     font-size: 1.5rem;
   }
 
+  blockquote p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin: 0 .5rem 2.5rem;
+  }
+  .testimonial-info {
+    font-size: 1.1rem;
+  }
+
   .contact-form__text {
     font-size: 1.4rem;
     width: 80%;
@@ -1806,6 +1885,23 @@ ul.footer-nav {
 
     .icons-section__box--text p {
       font-size: 1.4rem;
+    }
+
+    .testimonials-container {
+      height: 72vh;
+    }
+
+    blockquote p {
+      font-size: 1.3rem;
+      line-height: 1.7;
+      margin: 0 0.2rem 2rem;
+    }
+    .testimonial-info {
+      font-size: 1rem;
+    }
+
+    .footer-nav {
+      max-width: 70vw;
     }
 
     .footer-logo li {
