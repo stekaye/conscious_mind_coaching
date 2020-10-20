@@ -570,7 +570,7 @@ h1.mobile-only {
 #testimonials .section-header {
   font-size: 3rem;
   left: 50%;
-  margin-top: 9rem;
+  margin-top: 12rem;
   position: absolute;
   transform: translate(-50%, -50%);
 }
@@ -1647,6 +1647,10 @@ ul.footer-nav {
 
   .testimonials-container {
     height: 60vh;
+  }
+
+  #testimonials .section-header {
+    margin-top: 9rem;
   }
 
   .testimonials-container ul li::before {
