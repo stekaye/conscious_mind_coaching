@@ -219,7 +219,7 @@ h1.mobile-only {
 
 .language a {
   color: rgb(255, 254, 250);
-  left: 50%;
+  left: 52.5%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -230,7 +230,7 @@ h1.mobile-only {
 }
 
 .language-links a {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 /* ******************** < HERO STYLES > ******************** */
@@ -652,9 +652,9 @@ blockquote h2 {
 }
 
 blockquote p {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   font-weight: 200;
-  letter-spacing: .2px;
+  letter-spacing: .3px;
 	margin-bottom: 3rem;
 }
 
