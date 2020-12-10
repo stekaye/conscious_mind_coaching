@@ -639,7 +639,7 @@ h1.mobile-only {
   text-align: center;
   transform: translate(-50%, -50%);
 	z-index: 200;
-	max-width: 41%;
+	max-width: 42%;
 }
 
 blockquote h2 {
@@ -652,7 +652,7 @@ blockquote h2 {
 }
 
 blockquote p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 200;
   letter-spacing: .3px;
 	margin-bottom: 3rem;
