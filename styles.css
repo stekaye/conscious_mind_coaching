@@ -126,6 +126,10 @@ h1.mobile-only {
   letter-spacing: -0.5px;
 }
 
+.capitalise {
+  text-transform: uppercase;
+}
+
 /* ******************** < HEADER STYLES > ******************** */
 
 .header {
@@ -574,9 +578,9 @@ h1.mobile-only {
 }
 
 #testimonials .section-header {
-  font-size: 3rem;
+  font-size: 2.8rem;
   left: 50%;
-  margin-top: 12rem;
+  margin-top: 10rem;
   position: absolute;
   transform: translate(-50%, -50%);
 }
