@@ -142,7 +142,7 @@ h1.mobile-only {
   padding: 2vh 4vw 1vh;
   position: fixed;
   width: 100%;
-  z-index: 20;
+  z-index: 2000;
 }
 .header-logo {
   flex: 1 1 0;
