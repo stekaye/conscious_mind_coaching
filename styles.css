@@ -2118,7 +2118,7 @@ ul.footer-nav {
     width: 100%;
   }
 
-  blockquote p {
+  .blockquote p {
     font-size: 1.4rem;
     line-height: 1.6;
     margin: 0 .6rem 2.5rem;
@@ -2135,6 +2135,7 @@ ul.footer-nav {
     width: 4.5rem;
     height: 4.5rem;
   }
+
   .testimonials-arrows div:last-of-type {
     right: 6%;
   }
@@ -2214,6 +2215,10 @@ ul.footer-nav {
   
   .program-element {
     width: 84vw;
+  }
+
+  .program-element__image {
+    height: 40vh;
   }
   
   .program-element__smaller {
