@@ -44,7 +44,6 @@ body {
   flex-direction: column;
   font-weight: 400;
   line-height: 1.6;
-  /* margin: 0 4vw; */
   max-width: 100vw;
 }
 
@@ -117,6 +116,18 @@ h1.mobile-only {
   top: 100.5%;
 }
 
+.white-button {
+  background-color: rgba(255, 254, 250, 0.8);
+  color: #697b5e;
+}
+
+.white-button:hover {
+  background-color: rgb(70, 87, 59);
+  color: #697b5e;
+  cursor: pointer;
+  top: 99.5%;
+}
+
 .bring-forward {
   color: #fffdf9;
   z-index: 1000;
@@ -128,6 +139,18 @@ h1.mobile-only {
 
 .capitalise {
   text-transform: uppercase;
+}
+
+.sub-section {
+  margin: 3rem 0;
+}
+
+.mb-large {
+  margin-bottom: 15vh !important;
+}
+
+.no-margin {
+  margin: 0 !important;
 }
 
 /* ******************** < HEADER STYLES > ******************** */
@@ -155,12 +178,7 @@ h1.mobile-only {
   text-transform: uppercase;
 }
 .header-logo a {
-  /* color: #767c77; */
   cursor: pointer;
-  /* font-family: 'Poppins', sans-serif;
-  font-size: 2.8rem;
-  font-weight: 600;
-  line-height: 1; */
   text-decoration: none;
 }
 .header-logo img {
@@ -214,7 +232,6 @@ h1.mobile-only {
   border-radius: 100%;
   height: 3rem;
   margin-right: 0.5vw;
-  /* padding: .3rem; */
   position: relative;
   text-align: center;
   vertical-align: -50%;
@@ -248,6 +265,7 @@ h1.mobile-only {
 .hero {
   flex: 1 1 80vh;
   margin: 15vh 4vw 0;
+  position: relative;
 }
 
 .hero-image {
@@ -259,11 +277,21 @@ h1.mobile-only {
     url(images/compressed/cover/favourites/rocks6.jpg);
   background-size: cover;
   background-position: 50% 28%;
-  position: relative;
+}
+
+.hero-image__events {
+  background: 
+    linear-gradient(
+      rgba(118, 124, 119, 0.5),
+      rgba(118, 124, 119, 0.2)
+    ),
+    url(./images/compressed/Events/Conscious_Eating/Hero_Image_2.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-text {
-  color: rgba(255, 254, 250, 0.9);;
+  color: rgba(255, 254, 250, 0.9);
   font-family: 'Alata', sans-serif;
   font-size: 2.8rem;
   position: absolute;
@@ -271,6 +299,22 @@ h1.mobile-only {
   text-align: center;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.hero-image__events .hero-text {
+  font-family: 'Aleo', sans-serif;
+  font-size: 3.6rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  color: rgba(255, 254, 250, 0.8);
+  top: 15%;
+}
+
+.hero-text.tagline {
+  font-size: 1.6rem;
+  font-weight: 300;
+  top: 30%;
 }
 
 .hero-text span {
@@ -307,18 +351,21 @@ h1.mobile-only {
   position: relative;
   width: 24vw;
 }
-/* 
-.individuals-box {
-  border: 2px solid #697b5e;
+
+.events .service-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
 }
 
-.yoga-box {
-  border: 2px solid #e7b2a5;
+.events .service-box p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
 }
-
-.orgs-box {
-  border: 2px solid #ae8b75;
-} */
 
 .service-box__image {
   background-size: cover;
@@ -342,7 +389,6 @@ h1.mobile-only {
 }
 
 .service-box__number {
-  /* background-color: #fabea7; */
   border-radius: 100%;
   display: none;
   height: 7rem;
@@ -458,6 +504,23 @@ h1.mobile-only {
   font-size: 5rem;
 }
 
+.about-text h3 {
+  color: #697b5e;
+  font-family: 'Spartan';
+  font-size: 1.8rem;
+  font-weight: 200;
+  padding-top: 1rem;
+}
+
+.about-text h4 {
+  color: #697b5e;
+  font-family: 'Spartan';
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 3rem;
+  text-transform: uppercase;
+}
+
 .about-text p {
   font-size: 1.7rem;
   font-weight: 300;
@@ -517,9 +580,6 @@ h1.mobile-only {
 
 .icons-section__box:hover {
   background-color: #697b5e;
-  /* color: rgb(70, 87, 59); */
-  /* border-bottom: 1px solid #697b5e; */
-  /* margin: 0 0 1rem;  */
 }
 
 .icons-section__box:hover .icons-section__box--text h2, .icons-section__box:hover .icons-section__box--text p {
@@ -585,7 +645,6 @@ h1.mobile-only {
   transform: translate(-50%, -50%);
 }
 
-
 /* SLIDER STYLES */
 
 .testimonials-container {
@@ -598,6 +657,10 @@ h1.mobile-only {
 .testimonial-header__container {
   display: flex;
   justify-content: center;
+}
+
+.testimonial-header__container.event {
+  margin-top: 4rem;
 }
 
 .testimonials-container.ie9 nav div span {
@@ -622,7 +685,6 @@ h1.mobile-only {
 	height: 135vh;
 	border: solid rgba(0,0,0,0.2);
   border-width: 0;
-  /* opacity: 0.3; */
 	transform: translate(-50%, -50%);
 	pointer-events: none;
 	transition: border-width .4s .6s;
@@ -959,7 +1021,6 @@ textarea.contact-form__input + .contact-form__input--shadow {
   flex: 0 0 16vw;
   height: 16vw;
   margin: .25vw 0 .25vw .25vw;
-  /* opacity: 0.8; */
 }
 
 .photo-box:last-child {
@@ -1015,6 +1076,293 @@ textarea.contact-form__input + .contact-form__input--shadow {
   width: 80%;
 }
 
+/* ******************** < EVENTS PAGE STYLES > ******************** */
+
+.green-section {
+  background-color: #697b5e;
+  color: rgba(255, 254, 250, 0.8);
+  margin: 12vh 4vw 0;
+}
+
+.white-section {
+  margin: 12vh 4vw 0;
+}
+
+.text-inner {
+  flex: 1 1 auto;
+  margin: 3vh 15vw 0;
+  text-align: justify;
+}
+
+.text-inner h2 {
+  color: #697b5e;
+  display: inline;
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+}
+
+.text-inner p {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 2rem 0;
+}
+
+.text-inner li {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: .5rem 0;
+}
+
+.text-inner li i {
+  color: #697b5e;
+}
+
+.text-inner.cross li i {
+  color: #9b5151;
+}
+
+.text-inner li:first-child {
+  margin: 2rem 0 0;
+}
+
+.event-info__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4rem 4vw;
+}
+
+.event-info__container.border {
+  border: 1px solid rgba(255, 254, 250, 0.8);
+}
+
+.event-info__contents {
+  padding: 4rem;
+}
+
+.event-info__text {
+  margin: 2rem;
+  text-align: center;
+}
+
+.event-info__details {
+  align-items: flex-start;
+  color: rgba(255, 254, 250, 0.8);
+  font-family: 'Spartan';
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.8px;
+  margin-top: 4rem;
+}
+
+.event-info__item,
+.event-info__icon {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.event-info__item {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.event-info__item div a {
+  color: #dfebd8;
+}
+
+.event-info__icon {
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+.event-info__icon i {
+  font-size: 3rem;
+  padding-right: 2rem;
+  width: 6rem;
+}
+
+.event-info__text h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.event-info__text h2 {
+  font-family: 'Spartan';
+  font-size: 2rem;
+  font-weight: 200;
+  padding: 0.3rem 0;
+}
+
+.event-info__box:hover {
+  background-color: #697b5e;
+  color: #fff
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+}
+
+button.accordion {
+  margin-top: 3rem;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.program-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4vh 4vw 0;
+}
+
+.program-wrapper h2 {
+  align-self: flex-start;
+  color: #697b5e;
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+}
+
+.program-container {
+  align-items: top;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.program-element {
+  margin: 2rem 0 3rem 2vw;
+  width: 28vw;
+}
+
+.program-element__smaller {
+  margin: 2rem 1vw 3rem;
+  width: 20vw;
+}
+
+.program-element__image {
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.program-element__image.compass { 
+  background-image: url('./images/compressed/Events/Conscious_Eating/1_Brujula.jpg');
+}
+
+.program-element__image.tea { 
+  background-image: url('./images/compressed/Events/Conscious_Eating/2_Nutrirse.jpg');
+}
+
+.program-element__image.adventure { 
+  background-image: url('./images/compressed/Events/Conscious_Eating/3_Nuevo_hábito.jpg');
+}
+
+.program-element__image.jump { 
+  background-image: url('./images/compressed/Events/Conscious_Eating/4_Salto.jpg');
+}
+
+.program-element__image.food { 
+  background-image: url('./images/compressed/Events/Conscious_Eating/5_Tu-camino.jpg');
+}
+
+.program-element__title {
+  color: #697b5e;
+  font-family: 'Aleo', serif;
+  font-size: 1.25vw;
+  font-weight: 400;
+  margin: 1rem 0 1.5rem;
+}
+
+.program-element__title span {
+  font-weight: 700;
+  font-size: 1.35vw;
+}
+
+.program-element__text li {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: .5rem 0;
+}
+
+.program-element__text li i {
+  color: #697b5e;
+  padding-right: 2rem;
+}
+
+.program-element__text li:first-child {
+  margin: 2rem 0 0;
+}
+
+.about-image.event1-kristina {
+  background-image: url(/images/compressed/Events/Conscious_Eating/kristina_edited.jpg);
+}
+
+.about-image.event1-sara {
+  background-image: url(/images/compressed/Events/Conscious_Eating/sara_edited.jpg);
+}
+
+.price-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.price-box {
+  align-items: center;
+  background-color: rgba(255, 254, 250, 0.9);
+  border: #697b5e;
+  color: #697b5e;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  margin: 6rem 0 3rem;
+}
+
+.price-box:first-child {
+  background-color: rgba(255, 254, 250, 0.8);
+  margin-right: 4rem;
+}
+
+.price-box:hover {
+  background-color: rgba(255, 254, 250, 1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.price-header {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.price-amount {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.price-subheader {
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.last-statement {
+  margin-top: 3rem;
+}
+
 /* ******************** < FOOTER STYLES > ******************** */
 
 .footer {
@@ -1022,12 +1370,7 @@ textarea.contact-form__input + .contact-form__input--shadow {
   background-color: #697b5e;
   position: relative;
   height: 38vh;
-  /* margin: 3rem 0 0; */
 }
-
-/* .contact-footer {
-  background-color: #697b5e;
-} */
 
 .footer-logo {
   left: 50%;
@@ -1102,7 +1445,6 @@ ul.footer-nav {
 .copyright p {
   margin-bottom: 0.5rem;
 }
-
 
 /* ****************** *M*E*D*I*A*S*T*Y*L*E*S* ****************** */
 
@@ -1257,10 +1599,17 @@ ul.footer-nav {
   .copyright {
     top: 85%;
   }
-
 }
 
 @media (max-width: 1000px) {
+
+  .hero-image__events .hero-text {
+    top: 23%;
+  }
+
+  .hero-text.tagline {
+    top: 40%;
+  }
 
   .header {
     align-items: center;
@@ -1310,7 +1659,7 @@ ul.footer-nav {
     width: 2.5rem;
   }
 
-   ul.language-links {
+    ul.language-links {
     margin: 0 0 2vh;
   }
 
@@ -1322,30 +1671,43 @@ ul.footer-nav {
     margin-right: 0;
   }
 
+  blockquote h2 {
+    font-size: 1.4rem;
+  }
 }
 
-
 @media (max-width: 900px) {
+
+  .hero-image__events .hero-text {
+    font-size: 3rem;
+    top: 21%;
+  }
+
+  .hero-text.tagline {
+    font-size: 1.4rem;
+    top: 35%;
+  }
 
   .service-box__text h2 {
     font-size: 1.8vw;
   }
 
   .testimonials-container ul li::before {
-    /* border-radius: 5%; */
     width: 90vh;
     height: 90vh;
     opacity: 0.3;
   }
 
   .testimonials-content blockquote {
-    top: 50%;
+    top: 58%;
     max-width: 85%;
   }
+
   blockquote p {
-    font-size: 2.5rem;
+    font-size: 1.3rem;
     margin-bottom: 3rem;
   }
+
   .testimonial-info {
     font-size: 1.8rem;
     font-weight: 100;
@@ -1395,9 +1757,58 @@ ul.footer-nav {
     font-size: 4rem;
   }
 
+  .program-wrapper h2 {
+    font-size: 3rem;
+  }
+  
+  .program-container {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .program-element {
+    margin: 1rem 0;
+    width: 80vw;
+  }
+  
+  .program-element__smaller {
+    margin: 1rem 0;
+    width: 80vw;
+  }
+  
+  .program-element__image {
+    height: 50vh;
+  }
+  
+  .program-element__title {
+    font-size: 2rem;
+    margin: 1rem 0 2rem;
+  }
+  
+  .program-element__title span {
+    font-size: 2rem;
+  }
+  
+  .program-element__text li {
+    font-size: 1.6rem;
+  }
+  
+  .program-element__text li i {
+    padding-right: 2.5rem;
+  }
+
+  .price-subheader {
+    font-size: 1.55rem;
+  }
 }
 
 @media (max-width: 780px) {
+
+  .hero-image__events .hero-text {
+    width: 70%;
+  }
 
   .section-header {
     font-size: 3rem;
@@ -1429,6 +1840,12 @@ ul.footer-nav {
     height: 40vh;
     margin: 0 auto;
     width: 40vw;
+  }
+
+  .about-image.event1-kristina,
+  .about-image.event1-sara {
+    height: 60vh;
+    width: 70vw;
   }
 
   .about-text h1 {
@@ -1523,6 +1940,9 @@ ul.footer-nav {
     font-weight: 200;
   }
 
+  .price-subheader {
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1546,6 +1966,17 @@ ul.footer-nav {
 
   h1.mobile-only {
     font-size: 2.5rem;
+  }
+
+  .hero-image__events .hero-text {
+    font-size: 2.6rem;
+    top: 12%;
+    width: 80%;
+  }
+
+  .hero-text.tagline {
+    font-size: 1.4rem;
+    top: 26%;
   }
 
   .header-logo img {
@@ -1614,6 +2045,12 @@ ul.footer-nav {
     width: 80vw;
   }
 
+  .about-image.event1-kristina,
+  .about-image.event1-sara {
+    height: 40vh;
+    width: 80vw;
+  }
+
   .about-text {
     margin: 3vh 0;
   }
@@ -1632,7 +2069,7 @@ ul.footer-nav {
 
   .about-text h2 {
     display: block;
-    font-size: 5rem;
+    font-size: 3.8rem;
     text-align: left;
   }
 
@@ -1676,22 +2113,17 @@ ul.footer-nav {
     opacity: 0.3;
   }
 
-  .testimonial-header__container {
-    position: absolute;
-    top: -5%;
-    left: 50%;
-    /* transform: translate(-50%, -50%); */
-  }
-
   .testimonials-content blockquote {
     top: 54%;
     width: 100%;
   }
+
   blockquote p {
     font-size: 1.4rem;
     line-height: 1.6;
     margin: 0 .6rem 2.5rem;
   }
+
   .testimonial-info {
     font-size: 1.2rem;
     font-weight: 100;
@@ -1738,10 +2170,6 @@ ul.footer-nav {
     height: 28rem;
   }
 
-  /* .footer-logo img {
-    height: 6.5rem;
-  } */
-
   .footer-logo li {
     display: inline-block;
     font-size: 2.4rem;
@@ -1760,7 +2188,72 @@ ul.footer-nav {
     font-weight: 200;
   }
 
+  .event-info__text h2 {
+    font-size: 1.32rem;
+  }
+
+  .white-section {
+    margin: 4vh 4vw 0;
+  }
   
+  .text-inner {
+    margin: 3vh 4vw 0;
+  }
+
+  .text-inner h2 {
+    font-size: 2.2rem;
+  }
+  
+  .text-inner p {
+    font-size: 1.4rem;
+  }
+  
+  .text-inner li {
+    font-size: 1.4rem;
+  }
+  
+  .program-element {
+    width: 84vw;
+  }
+  
+  .program-element__smaller {
+    width: 84vw;
+  }
+  
+  .program-element__title {
+    font-size: 1.6rem;
+  }
+  
+  .program-element__title span {
+    font-size: 1.6rem;
+  }
+  
+  .program-element__text li {
+    font-size: 1.4rem;
+  }
+
+  .event-info__contents {
+    width: 96vw;
+  }
+
+  .event-info__item {
+    font-size: 1.2rem;
+  }
+
+  .price-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .price-box {
+    padding: 3rem 1.5rem;
+    margin: 2rem 0;
+    width: 70vw;
+  }
+  
+  .price-box:first-child {
+    margin-right: 0;
+  }
 
 }
 
@@ -1774,17 +2267,9 @@ ul.footer-nav {
     height: 22vh;
   }
 
-  /* Was 22.5 with language buttons */
-
   .header-logo img {
     height: 5.6rem;
   }
-
-  /* MT was .3vh with language buttons */
-
-   /* ul.language-links {
-    margin-top: 5vh;
-  } */
 
   .nav-links > li {
     padding-right: 1.4vw;
@@ -1808,6 +2293,14 @@ ul.footer-nav {
     font-size: 1.7rem;
   }
 
+  .hero-image__events .hero-text {
+    font-size: 2.2rem;
+  }
+
+  .hero-text.tagline {
+    font-size: 1.25rem;
+  }
+
   .service-box {
     height: 40rem;
     width: 30rem;
@@ -1821,6 +2314,14 @@ ul.footer-nav {
     font-size: 1.2rem;
   }
 
+  .about-text h2 {
+    font-size: 3.25rem;
+  }
+
+  .about-text h3{
+    font-size: 1.5rem;
+  }
+
   .icons-section__box--text p {
     font-size: 1.5rem;
   }
@@ -1830,6 +2331,7 @@ ul.footer-nav {
     line-height: 1.7;
     margin: 0 .5rem 2.5rem;
   }
+
   .testimonial-info {
     font-size: 1.1rem;
   }
@@ -1852,7 +2354,52 @@ ul.footer-nav {
     font-size: 2rem;
   }
 
-  @media (max-width: 325px) {
+  .event-info__text {
+    margin: 1.4rem .5rem;
+  }
+
+  .event-info__text h2 {
+    font-size: 1.25rem;
+  }
+
+  .text-inner h2 {
+    font-size: 2rem;
+  }
+  
+  .text-inner p {
+    font-size: 1.2rem;
+  }
+  
+  .text-inner li {
+    font-size: 1.2rem;
+  }
+
+  .program-wrapper h2 {
+    font-size: 2.2rem;
+  }
+  
+  .program-element__image {
+    height: 40vh;
+  }
+  
+  .program-element__title {
+    font-size: 1.4rem;
+  }
+  
+  .program-element__title span {
+    font-size: 1.4rem;
+  }
+  
+  .program-element__text li {
+    font-size: 1.4rem;
+  }
+
+  .event-info__item {
+    font-size: .95rem;
+  }
+}
+
+@media (max-width: 325px) {
 
     #delete {
       display: none;
@@ -1884,6 +2431,14 @@ ul.footer-nav {
       font-size: 1.5rem;
     }
 
+    .hero-image__events .hero-text {
+      font-size: 2rem;
+    }
+  
+    .hero-text.tagline {
+      font-size: 1.1rem;
+    }
+
     .service-box {
       height: 38rem;
       width: 28rem;
@@ -1891,6 +2446,10 @@ ul.footer-nav {
 
     .service-box__text p {
       font-size: 1.15rem;
+    }
+
+    .about-text h2 {
+      font-size: 2.8rem;
     }
 
     .icons-section__box--text {
@@ -1909,8 +2468,12 @@ ul.footer-nav {
       font-size: 2.4rem;
     }
 
+    .testimonials-content blockquote {
+      top: 52%;
+    }
+
     blockquote p {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       line-height: 1.6;
       margin: 0 0.2rem 2rem;
     }
@@ -1930,8 +2493,64 @@ ul.footer-nav {
     .footer-logo li {
       font-size: 1.8rem;
     }
+
+    .event-info__text {
+      margin: 1.4rem .5rem;
+    }
+
+    .event-info__text h2 {
+      font-size: 1.1rem;
+    }
+
+    .text-inner h2 {
+      font-size: 1.7rem;
+    }
+    
+    .text-inner p {
+      font-size: 1.15rem;
+    }
+    
+    .text-inner li {
+      font-size: 1.1rem;
+    }
+
+    .program-element__title,
+    .program-element__title span,
+    .program-element__text li {
+      font-size: 1.25rem;
+    }
+    
+    .event-info__contents {
+      padding: 0 3.5rem 3.5rem;
+      width: 99vw;
+    }
   
-  }}
+    .event-info__item {
+      font-size: .9rem;
+    }
+
+    .event-info__icon i {
+      font-size: 2.2rem;
+      padding-right: 1rem;
+      width: 4.4rem;
+  }
+    
+    .price-box {
+      padding: 3rem 1.5rem;
+      margin: 2rem 0;
+      width: 72vw;
+    }
+
+    .price-subheader {
+      font-size: 1.2rem;
+    }
+
+    .last-statement {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    
+}
 
 
 

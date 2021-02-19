@@ -1,14 +1,3 @@
-var currentHeight = $(".header").innerHeight();
-console.log(currentHeight);
-
-$(".scroll").click(function(event){
-	event.preventDefault();
-  var pageId = $(this).attr("data-page");
-  $("html, body").animate({ 
-		scrollTop: $("#"+pageId).offset().top - currentHeight
-	}, 300);
-});
-
 (function() {
   
   let autoUpdate = false;
