@@ -473,6 +473,27 @@ h1.mobile-only {
   margin: 6vh 10vw;
 }
 
+.about-section__intro {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  margin: 10vh 10vw 0;
+}
+
+.about-section__intro h2 {
+  color: #697b5e ;
+  font-family: 'Caveat', cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.about-section__intro p {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 2rem 0;
+}
+
 .about-image {
   background-image: url(/images/compressed/about/kristina_filter_2b.jpg);
   background-position: center;
@@ -1139,6 +1160,12 @@ textarea.contact-form__input + .contact-form__input--shadow {
 
 .event-info__contents {
   padding: 4rem;
+}
+
+.event-info__contents h2 {
+  color: rgba(255, 254, 250. 0.8);
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
 }
 
 .event-info__text {
