@@ -73,7 +73,7 @@ h1.mobile-only {
 }
 
 .underline-white {
-  border-bottom: 1.5rem solid rgba(255, 255, 255, 0);
+  border-bottom: 1.5rem solid rgba(255, 255, 255, 0.2);
   display: inline-block;
   line-height: 0.1;
   width: auto;
@@ -280,12 +280,7 @@ h1.mobile-only {
 }
 
 .hero-image__events {
-  background: 
-    linear-gradient(
-      rgba(118, 124, 119, 0.5),
-      rgba(118, 124, 119, 0.2)
-    ),
-    url(./images/compressed/Events/Conscious_Eating/Hero_Image_2.jpg);
+    background-image: url('./images/compressed/Events/Conscious_Eating/hiking-female-boots.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -1331,11 +1326,11 @@ button.accordion {
 }
 
 .about-image.event1-kristina {
-  background-image: url(/images/compressed/Events/Conscious_Eating/kristina_edited.jpg);
+  background-image: url(/images/compressed/Events/Conscious_Eating/kristina_edited2.jpg);
 }
 
 .about-image.event1-sara {
-  background-image: url(/images/compressed/Events/Conscious_Eating/sara_edited.jpg);
+  background-image: url(/images/compressed/Events/Conscious_Eating/sara_cauliflower_edited.jpg)
 }
 
 .price-container {
