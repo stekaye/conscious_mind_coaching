@@ -1902,7 +1902,9 @@ ul.footer-nav {
   }
 
   .mobile-remove {
-    display: none;
+    display: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   h1.mobile-only {
@@ -2521,11 +2523,11 @@ ul.footer-nav {
 
 @media (max-width: 325px) {
 
-    #delete {
+    /* #delete {
       display: none;
       padding: 0;
       margin: 0;
-    }
+    } */
 
     .section-header {
       font-size: 2.2rem;
