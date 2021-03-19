@@ -479,7 +479,7 @@ h1.mobile-only {
   color: #697b5e;
   font-family: 'Caveat', cursive;
   font-size: 3.5rem;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -640,6 +640,65 @@ h1.mobile-only {
   font-weight: 300;
   height: 10rem;
   text-align: center;
+}
+
+/* ******************** < TESTIMONIAL STYLES > ******************** */
+
+.events-section {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+  margin: 8vh 4vw 12vh;
+}
+
+.events-box {
+  align-items: center;
+  background-image: url('./images/compressed/Events/Conscious_Eating/hiking-female-boots.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  height: 50vh;
+  justify-content: center;
+  margin: 1rem;
+  position: relative;
+  width: 50%;
+}
+
+.events-box a {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  line-height: 100%;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.events-box__text {
+  color: rgba(255, 254, 250, 0.8);
+  font-family: 'Aleo', sans-serif;
+  line-height: 1.5;
+  padding: 1rem;
+  width: 90%;
+}
+
+.events-box__text.title {
+  font-size: 2.2vw;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.events-box__text.subtitle {
+  font-size: 1.6vw;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 /* ******************** < TESTIMONIAL STYLES > ******************** */
@@ -1330,7 +1389,8 @@ button.accordion {
 }
 
 .about-image.event1-sara {
-  background-image: url(/images/compressed/Events/Conscious_Eating/sara_cauliflower_edited.jpg)
+  background-image: url(/images/compressed/Events/Conscious_Eating/sara_cauliflower_edited.jpg);
+  background-position: center center;
 }
 
 .price-container {
@@ -1898,6 +1958,27 @@ ul.footer-nav {
     width: 88%;
   }
 
+  .events-section {
+    flex-direction: column;
+  }
+
+  .events-box {
+    width: 100%;
+  }
+
+  .events-box__text {
+    width: 90%;
+  }
+  
+  .events-box__text.title {
+    font-size: 2.5rem;
+  }
+  
+  .events-box__text.subtitle {
+    font-size: 1.8rem;
+  }
+  
+
   .contact-form__text {
     font-size: 1.8rem;
     font-weight: 200;
@@ -2351,6 +2432,14 @@ ul.footer-nav {
 
   .icons-section__box--text p {
     font-size: 1.5rem;
+  }
+
+  .events-box__text.title {
+    font-size: 4.4vw;
+  }
+  
+  .events-box__text.subtitle {
+    font-size: 3.5vw;
   }
 
   blockquote p {
