@@ -681,6 +681,10 @@ h1.mobile-only {
   width: 100%;
 }
 
+.events-box.second a {
+  cursor: initial;
+}
+
 .events-box__text {
   color: rgba(255, 254, 250, 0.8);
   font-family: 'Aleo', sans-serif;
