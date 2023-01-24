@@ -1081,6 +1081,12 @@ textarea.contact-form__input + .contact-form__input--shadow {
   text-decoration: none;
 }
 
+.contactLink:visited{
+  color:#eb9c74;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 /* ******************** < INSTA BOX STYLES > ******************** */
 
 .instagram-section {
