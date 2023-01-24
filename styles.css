@@ -1075,6 +1075,12 @@ textarea.contact-form__input + .contact-form__input--shadow {
   justify-content: center;
 }
 
+.contactLink{
+  color:#eb9c74;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 /* ******************** < INSTA BOX STYLES > ******************** */
 
 .instagram-section {
