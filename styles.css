@@ -1544,6 +1544,18 @@ ul.footer-nav {
   margin-bottom: 0.5rem;
 }
 
+.linkedinLink{
+  color:#FFFFFF;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.linkedinLink:visited{
+  color:#FFFFFF;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 /* ****************** *M*E*D*I*A*S*T*Y*L*E*S* ****************** */
 
 /* WIDE - DESKTOP DEVICES */
