@@ -1545,13 +1545,13 @@ ul.footer-nav {
 }
 
 .linkedinLink{
-  color:#FFFFFF;
+  color: rgba(255, 254, 250, 0.5);
   background-color: transparent;
   text-decoration: none;
 }
 
 .linkedinLink:visited{
-  color:#FFFFFF;
+  color:rgba(255, 254, 250, 0.5);
   background-color: transparent;
   text-decoration: none;
 }
