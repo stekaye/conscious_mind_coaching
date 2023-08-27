@@ -285,6 +285,11 @@ h1.mobile-only {
     background-size: cover;
 }
 
+.hero-image__organisations {
+  background-image: url('./images/compressed/services_organisations/1_hero_image/1_1.jpg');
+  background-size: cover;
+}
+
 .hero-text {
   color: rgba(255, 254, 250, 0.9);
   font-family: 'Alata', sans-serif;
@@ -294,7 +299,10 @@ h1.mobile-only {
   text-align: center;
   top: 50%;
   transform: translate(-50%, -50%);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
 }
+
+
 
 .hero-image__events .hero-text {
   font-family: 'Aleo', sans-serif;
@@ -306,10 +314,28 @@ h1.mobile-only {
   top: 15%;
 }
 
+.hero-image__organisations .hero-text {
+  font-family: 'Aleo', sans-serif;
+  font-size: 3.6rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  color: rgba(255, 254, 250, 0.8);
+  margin:auto;
+}
+
 .hero-text.tagline {
   font-size: 1.6rem;
   font-weight: 300;
   top: 30%;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.hero-image__organisations .hero-text.tagline {
+  font-size: 1.6rem;
+  font-weight: 300;
+  top: 70%;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
 
 .hero-text span {
@@ -319,6 +345,18 @@ h1.mobile-only {
 }
 
 /* ******************** < SERVICE STYLES > ******************** */
+
+.programs-workshop__text {
+  display: block;
+  color: #767c77;
+  font-family: 'Aleo', serif;
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+  width: 80%;
+}
 
 .services-section {
   display: flex;
@@ -345,7 +383,22 @@ h1.mobile-only {
   margin: 4rem 0;
   position: relative;
   width: 24vw;
+  margin: 15px;
 }
+
+.programs-box {
+  border: 2px solid #697b5e;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  height: 45rem;
+  width: 30rem;
+  margin: 4rem 0;
+  position: relative;
+
+  margin: 15px;
+}
+
 
 .events .service-box {
   align-items: center;
@@ -382,6 +435,88 @@ h1.mobile-only {
   background-image: url("/images/compressed/services/organisations/organisations.png");
   background-position: 60% 50%;
 }
+
+/* services page */
+.one-on-one-image {
+  background-image: url("/images/compressed/services_organisations/2_one_on_one/1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.teamwork-image {
+  background-image: url("/images/compressed/services_organisations/3_team_workshops/1.jpg");
+  background-position: center;
+  background-size:cover;
+}
+
+.groupwork-image {
+  background-image: url("/images/compressed/services_organisations/4_group_workshops/1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.teambuild-image {
+  background-image: url("/images/compressed/services_organisations/5_retreats/2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.services-page-button {
+  background-color: #697b5e;
+  border: none;
+  border-radius: 15px;
+  color: #fff8ee;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 300;
+  /* padding: 1.5rem 2rem; */
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+}
+
+.services-page-button span {
+  flex: 1;
+  margin: 0 auto;
+  padding: 1.5rem 2.2rem;
+}
+
+.services-page-button:hover {
+  background-color: rgb(70, 87, 59);
+  color: #fff8ee;
+  cursor: pointer;
+  top: 99.5%;
+}
+
+.services-page-button:focus {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.services-page-button:active {
+  top: 100.5%;
+}
+
+.services-page-button-button {
+  margin: 1vh 0 3vh;
+}
+
+.services-page-button-button:hover {
+  transform: translateY(-4%);
+}
+
+.services-page-button-button:focus {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.services-page-button-button:active {
+  transform: translateY(4%);
+}
+
+/* end of services page */
 
 .service-box__number {
   border-radius: 100%;
@@ -422,6 +557,15 @@ h1.mobile-only {
   position: relative;
 }
 
+/* .themes-subtitle h3{
+  font-size: 0.85vw;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%); 
+  width: 70%;
+} */
+
 .service-box__text h2 {
   font-family: 'Spartan', sans-serif;
   font-size: 0.85vw;
@@ -454,6 +598,16 @@ h1.mobile-only {
   top: 100%;
   transform: translate(-50%, -50%);
 }
+
+.services-offered-button {
+  font-size: 1.2rem;
+  left: 50%;
+  position: absolute;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  width: 170px;
+}
+
 
 /* ******************** < ABOUT STYLES > ******************** */
 
@@ -722,6 +876,7 @@ h1.mobile-only {
   margin-top: 10rem;
   position: absolute;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /* SLIDER STYLES */
@@ -1179,6 +1334,28 @@ textarea.contact-form__input + .contact-form__input--shadow {
   margin: 12vh 4vw 0;
 }
 
+.brown-section {
+  background-color: #ae8b75;
+  color:  hsl(23,26%,57%)rgb(174,139,117);
+  margin: 12vh 4vw 0;
+}
+
+.rose-section {
+  background-color: #e7b2a5;
+  color:hsl(12,58%,78%)rgb(231,178,165);
+  margin: 12vh 4vw 0;
+}
+
+.orange-section {
+  background-color: #e89f71;
+  color:  hsl(23,72%,68%)rgb(232,159,113);
+  margin: 12vh 4vw 0;
+}
+
+
+
+
+
 .text-inner {
   flex: 1 1 auto;
   margin: 3vh 15vw 0;
@@ -1307,6 +1484,13 @@ button.accordion {
   margin-top: 3rem;
 }
 
+.orgnisations-button{
+  margin: auto;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+
 .active, .accordion:hover {
   background-color: #ccc;
 }
@@ -1320,11 +1504,29 @@ button.accordion {
   margin: 4vh 4vw 0;
 }
 
+.program-wrapper-organisations {
+  align-items:center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: 4vh 4vw 0; */
+  margin: auto;
+}
+
 .program-wrapper h2 {
   align-self: flex-start;
   color: #697b5e;
   font-family: 'Caveat', cursive;
   font-size: 3rem;
+}
+
+.program-wrapper-organisations h2 {
+  align-self: center;
+  color: #697b5e;
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+  margin: auto;
 }
 
 .program-container {
@@ -1350,6 +1552,13 @@ button.accordion {
   background-position: center;
   background-size: cover;
   height: 25rem;
+}
+
+.program-element__image__organisations{
+  background-position: center;
+  background-size: contain;
+  height: 28rem;
+  width: 28rem;
 }
 
 .program-element__image.compass { 
@@ -1399,6 +1608,114 @@ button.accordion {
 .program-element__text li:first-child {
   margin: 2rem 0 0;
 }
+
+/* services page programs */
+
+.services-wrapper {
+  align-items:center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4vh 4vw 0;
+}
+
+.services-wrapper-organisations {
+  align-items:center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: 4vh 4vw 0; */
+  margin: auto;
+  width: 1200px;
+}
+
+.services-wrapper h2 {
+  align-self: center;
+  text-align: center;
+  color: #697b5e;
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+ 
+}
+
+.services-wrapper-organisations h2 {
+  align-self: center;
+  text-align: center;
+  color: #697b5e;
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+  margin: auto;
+}
+
+.services-container {
+  align-items: top;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services-element {
+  margin: 2rem 0 3rem 2vw;
+  width: 28vw;
+  
+}
+
+.services-element__smaller {
+  margin: 2rem 1vw 3rem;
+  width: 300px;
+  margin: 50px;
+}
+
+.services-element__image {
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.services-element__image__organisations{
+  background-position: center;
+  background-size:contain;
+  height: 200px;
+  width:280px;
+  margin: 10px;
+}
+
+.services-element__title {
+  color: #697b5e;
+  text-align: center;
+  font-family: 'Aleo', serif;
+  font-size: 1.25vw;
+  font-weight: 400;
+  margin: auto;
+  
+}
+
+.services-element__title span {
+  font-weight: 700;
+  font-size: 1.35vw;
+}
+
+.services-element__text li {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: .5rem 0;
+}
+
+.services-element__text li i {
+  color: #697b5e;
+  padding-right: 2rem;
+}
+
+.services-element__text li:first-child {
+  margin: 2rem 0 0;
+}
+
+
+/* end of services page programs */
 
 .about-image.event1-kristina {
   background-image: url(/images/compressed/Events/Conscious_Eating/kristina_edited2.jpg);
@@ -1556,6 +1873,79 @@ ul.footer-nav {
   text-decoration: none;
 }
 
+/* modal aka pop-up */
+
+
+.modal-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  max-width: 100%;
+  height: 400px;
+  overflow: auto;
+  z-index: 1050;
+}
+
+.modal-content {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-title {
+  flex: 1;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+}
+
+.modal-image{
+  margin: auto;
+  height: 370px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-text{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+}
+
+
+.modal-book-button{
+  height: 25px;
+  width: 60px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-open body {
+  display: initial;
+}
+
+
+
+
+
+
 /* ****************** *M*E*D*I*A*S*T*Y*L*E*S* ****************** */
 
 /* WIDE - DESKTOP DEVICES */
@@ -1693,6 +2083,7 @@ ul.footer-nav {
   .contact-home__image {
     width: 35vw;
   }
+
 
   .footer {
     height: 25vh;
@@ -2284,8 +2675,10 @@ ul.footer-nav {
 
   .contact-home__image {
     margin: 4vh auto 0;
-    width: 50vw;
+    width: 30vw;
   }
+
+
 
   .instagram-link p {
     font-size: 1.2rem;
@@ -2431,6 +2824,8 @@ ul.footer-nav {
     font-size: 1.7rem;
   }
 
+ 
+
   .hero-image__events .hero-text {
     font-size: 2.2rem;
   }
@@ -2438,6 +2833,8 @@ ul.footer-nav {
   .hero-text.tagline {
     font-size: 1.25rem;
   }
+
+  
 
   .service-box {
     height: 40rem;
